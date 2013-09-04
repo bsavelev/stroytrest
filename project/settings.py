@@ -1,4 +1,7 @@
-# Django settings for project project.
+# -*- coding:utf-8 -*-
+# Django setting for project Stroytrest
+# author: Alexandrov Michael
+# e-mail: mikle.alex@gmail.com
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
