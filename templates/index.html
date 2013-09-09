@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>78 регион</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/metro/metro.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/reveal.css">
+	<script src="http://yandex.st/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://yandex.st/jquery-ui/1.10.3/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://yandex.st/jquery-ui/1.10.3/themes/base/jquery-ui.min.css">
+	<script src="{{ STATIC_URL }}js/slider.js"></script>
+	<script src="{{ STATIC_URL }}js/site.js"></script>
+	<script src="{{ STATIC_URL }}js/metro.js"></script>
+	<script src="{{ STATIC_URL }}js/jquery.reveal.min.js"></script>
+</head>
+<body>
+
+	<div class="page">
+		<div class="wrap header">
+			<div class="three-cols">
+				<div class="col">
+					<div class="logo"><a href="/"><img src="{{ STATIC_URL }}i/logo.png" alt="78 регион"></a></div>
+				</div>
+				<div class="col">
+					<div class="banner">
+						<div class="inner">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, fugiat rem nesciunt voluptates maxime.</p>
+						</div>
+					</div>
+					<div class="benefits">
+						<div class="benefit"><a href="#"><img src="{{ STATIC_URL }}i/ben/1.jpg" alt="214 закон"><span>214 закон</span></a></div>
+						<div class="benefit"><a href="#"><img src="{{ STATIC_URL }}i/ben/2.jpg" alt="Полное сопровождение при сделке"><span>Полное сопровождение при сделке</span></a></div>
+						<div class="benefit"><a href="#"><img src="{{ STATIC_URL }}i/ben/3.jpg" alt="Только проверенные застройщики"><span>Только проверенные застройщики</span></a></div>
+					</div>
+					<div class="main-menu main-menu_hor">
+						<ul>
+							<li><a href="#">Наши услуги</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Партнёрам</a></li>
+							<li class="has-child"><a href="#">Контакты</a>
+								<ul>
+									<li><a href="#">Подпунтк</a></li>
+									<li><a href="#">Подпунтк длиной в несколько строк</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="login-links">
+						<a href="#" class="bg-link">Вход</a>
+						<a href="#" class="bg-link">Регистрация</a>
+					</div>
+					<div class="contacts">
+						<div class="phone">
+							<img src="{{ STATIC_URL }}i/ico/phone.png" alt="Телефоны">
+							<p>8 (123) 456-78-90</p>
+							<p>8 (123) 098-76-54</p>
+						</div>
+						<div class="address">
+							<img src="{{ STATIC_URL }}i/ico/home.png" alt="Адрес">
+							<p>Ул. Коммунистов-пионеров 45/35, оф. 10, г. Москва</p>
+						</div>
+					</div>
+					<div class="callback">
+						<a href="#" class="bg-link">Заказать звонок</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="wrap slider">
+			<div class="catalog-menu catalog-menu_hor">
+				<ul>
+					<li><a href="#">Объекты на карте</a></li>
+					<li><a href="#">Дома в центре</a></li>
+					<li><a href="#">Дома на севере</a></li>
+					<li><a href="#">Дома на юге</a></li>
+					<li><a href="#">Квартиры у метро</a></li>
+					<li class="active"><a href="#">Загородная недвижимость</a></li>
+					<li><a href="#">Зарубежная недвижимость</a></li>
+				</ul>
+			</div>
+			<div class="slides" id="slides">
+				<div class="slide"><a href="#slide-link"><img src="{{ STATIC_URL }}i/slide.jpg"></a></div>
+				<div class="slide"><a href="#slide-link"><img src="{{ STATIC_URL }}i/slide2.jpg"></a></div>
+				<div class="slide"><a href="#slide-link"><img src="{{ STATIC_URL }}i/slide3.jpg"></a></div>
+				<div class="controls"></div>
+			</div>
+			<script type="text/javascript">$( "#slides" ).slides(310, null, 5000);</script>
+		</div>
+		<div class="wrap search-form">
+			<div class="search-form_nav" id="tab_nav">
+				<ul>
+					<li class="active"><a href="#new">Новостройки</a></li>
+					<li><a href="#apartment">Квартиры</a></li>
+					<li><a href="#rooms">Комнаты</a></li>
+					<li><a href="#commercial">Коммерческая</a></li>
+					<li><a href="#house">Дома</a></li>
+					<li><a href="#area">Участки</a></li>
+					<li><a href="#abroad">Зарубежная</a></li>
+				</ul>
+				<div class="search-field">
+					<form>
+						<label>
+							<input type="text" name="search" placeholder="Введите текст для поиска по базе">
+							<input type="submit" value="Найти">
+						</label>
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="search-form_body" id="tab_form">
+				<div class="tab active">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price1" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from1"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to1"></label></p>
+											<p class="row"><label class="col"><input type="checkbox" name="credit">Рассрочка</label><label class="col"><input type="checkbox" name="ipoteka">Ипотека</label></p>
+											<p class="row"><label class="col"><input type="checkbox" name="repair">Отделка</label><label class="col"><input type="checkbox" name="subsid">Субсидии</label></p>
+										</div>
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Тип дома</option>
+												<option value="1">Жилой</option>
+												<option value="2">Нежилой</option>
+											</select>
+										</div>
+										<div class="field">
+											<p>Этаж</p>
+											<p><label>с&nbsp;<input type="text" name="price_from"></label> <label>по&nbsp;<input type="text" name="price_to"></label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p><label><input type="checkbox" name="studio">&nbsp;Студия</label></p>
+											<p>Комнат:&nbsp;<label><input type="checkbox" name="room_value_1">1</label>&nbsp;<label><input type="checkbox" name="room_value_2">2</label>&nbsp;<label><input type="checkbox" name="room_value_">3</label>&nbsp;<label><input type="checkbox" name="room_value_4">4+</label></p>
+										</div>
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;<input type="text" name="area_from"></label> <label>до&nbsp;<input type="text" name="area_to"></label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<p>Площадь кухни:</p>
+											<p><label>от&nbsp;<input type="text" name="kitchen_area_from"></label> <label>до&nbsp;<input type="text" name="kitchen_area_to"></label>&nbsp;кв.м.</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+										<div class="field">
+											<div><a href="#metro" data-reveal-id="metroMapPopUp" data-animation="fade" class="metroLink">Выбрать станцию метро</a></div>
+											<div class="metro-select-stantions"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Поиск по</p>
+											<p class="row"><label class="col"><input type="radio" name="search_type">комплексам</label><label class="col"><input type="radio" name="search_type">квартирам</label></p>
+										</div>
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<select class="metro-stantions-list" name="metro-stantions-list" multiple style="display:none;">
+							<option value="0">Девяткино</option>
+							<option value="1">Гражданский проспект</option>
+							<option value="2">Академическая</option>
+							<option value="3">Политехническая</option>
+							<option value="4">Площадь Мужества</option>
+							<option value="5">Лесная</option>
+							<option value="6">Выборгская</option>
+							<option value="7">Площадь Ленина</option>
+							<option value="8">Чернышевская</option>
+							<option value="9">Площадь Восстания</option>
+							<option value="10">Владимирская</option>
+							<option value="11">Пушкинская</option>
+							<option value="12">Технологический институт</option>
+							<option value="13">Балтийская</option>
+							<option value="14">Нарвская</option>
+							<option value="15">Кировский завод</option>
+							<option value="16">Автово</option>
+							<option value="17">Ленинский проспект</option>
+							<option value="18">Проспект Ветеранов</option>
+							<option value="19">Парнас</option>
+							<option value="20">Проспект Просвещения</option>
+							<option value="21">Озерки</option>
+							<option value="22">Удельная</option>
+							<option value="23">Пионерская</option>
+							<option value="24">Чёрная речка</option>
+							<option value="26">Горьковская</option>
+							<option value="27">Невский проспект</option>
+							<option value="28">Сенная площадь</option>
+							<option value="29">Фрунзенская</option>
+							<option value="30">Московские ворота</option>
+							<option value="31">Электросила</option>
+							<option value="32">Парк Победы</option>
+							<option value="33">Московская</option>
+							<option value="34">Звёздная</option>
+							<option value="35">Купчино</option>
+							<option value="36">Приморская</option>
+							<option value="37">Василеостровская</option>
+							<option value="38">Гостиный двор</option>
+							<option value="39">Маяковская</option>
+							<option value="40">Площадь Александра Невского</option>
+							<option value="41">Елизаровская</option>
+							<option value="42">Ломоносовская</option>
+							<option value="43">Пролетарская</option>
+							<option value="44">Обухово</option>
+							<option value="45">Рыбацкое</option>
+							<option value="46">Спасская</option>
+							<option value="47">Достоевская</option>
+							<option value="48">Лиговский проспект</option>
+							<option value="49">Новочеркасская</option>
+							<option value="50">Ладожская</option>
+							<option value="51">Проспект Большевиков</option>
+							<option value="52">Улица Дыбенко</option>
+							<option value="53">Комендантский проспект</option>
+							<option value="54">Старая Деревня</option>
+							<option value="55">Крестовский остров</option>
+							<option value="56">Чкаловская</option>
+							<option value="57">Спортивная</option>
+							<option value="58">Адмиралтейская</option>
+							<option value="59">Садовая</option>
+							<option value="60">Звенигородская</option>
+							<option value="61">Обводной канал</option>
+							<option value="62">Волковская</option>
+							<option value="63">Бухарестская</option>
+							<option value="64">Международная</option>
+							<option value="65">Петроградская</option>
+						</select>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row"><label class="col"><input type="radio" name="sale_type">Продажа</label><label class="col"><input type="radio" name="sale_type">Аренда</label></p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price2" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from2"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to2"></label></p>
+											<p><label><input type="checkbox" name="ipoteka">Ипотека</label></p>
+										</div>
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Тип дома</option>
+												<option value="1">Жилой</option>
+												<option value="2">Нежилой</option>
+											</select>
+										</div>
+										<div class="field">
+											<p>Этаж</p>
+											<p><label>с&nbsp;<input type="text" name="price_from"></label> <label>по&nbsp;<input type="text" name="price_to"></label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p><label><input type="checkbox" name="studio">&nbsp;Студия</label></p>
+											<p>Комнат:&nbsp;<label><input type="checkbox" name="room_value_1">1</label>&nbsp;<label><input type="checkbox" name="room_value_2">2</label>&nbsp;<label><input type="checkbox" name="room_value_">3</label>&nbsp;<label><input type="checkbox" name="room_value_4">4+</label></p>
+										</div>
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;<input type="text" name="area_from"></label> <label>до&nbsp;<input type="text" name="area_to"></label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<p>Площадь кухни:</p>
+											<p><label>от&nbsp;<input type="text" name="kitchen_area_from"></label> <label>до&nbsp;<input type="text" name="kitchen_area_to"></label>&nbsp;кв.м.</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+										<div class="field">
+											<div><a href="#metro" data-reveal-id="metroMapPopUp" data-animation="fade" class="metroLink">Выбрать станцию метро</a></div>
+											<div class="metro-select-stantions"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Поиск по</p>
+											<p class="row"><label class="col"><input type="checkbox" name="appart">комплексам</label><label class="col"><input type="checkbox" name="compl">квартирам</label></p>
+										</div>
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<select class="metro-stantions-list" name="metro-stantions-list" multiple style="display:none;">
+							<option value="0">Девяткино</option>
+							<option value="1">Гражданский проспект</option>
+							<option value="2">Академическая</option>
+							<option value="3">Политехническая</option>
+							<option value="4">Площадь Мужества</option>
+							<option value="5">Лесная</option>
+							<option value="6">Выборгская</option>
+							<option value="7">Площадь Ленина</option>
+							<option value="8">Чернышевская</option>
+							<option value="9">Площадь Восстания</option>
+							<option value="10">Владимирская</option>
+							<option value="11">Пушкинская</option>
+							<option value="12">Технологический институт</option>
+							<option value="13">Балтийская</option>
+							<option value="14">Нарвская</option>
+							<option value="15">Кировский завод</option>
+							<option value="16">Автово</option>
+							<option value="17">Ленинский проспект</option>
+							<option value="18">Проспект Ветеранов</option>
+							<option value="19">Парнас</option>
+							<option value="20">Проспект Просвещения</option>
+							<option value="21">Озерки</option>
+							<option value="22">Удельная</option>
+							<option value="23">Пионерская</option>
+							<option value="24">Чёрная речка</option>
+							<option value="26">Горьковская</option>
+							<option value="27">Невский проспект</option>
+							<option value="28">Сенная площадь</option>
+							<option value="29">Фрунзенская</option>
+							<option value="30">Московские ворота</option>
+							<option value="31">Электросила</option>
+							<option value="32">Парк Победы</option>
+							<option value="33">Московская</option>
+							<option value="34">Звёздная</option>
+							<option value="35">Купчино</option>
+							<option value="36">Приморская</option>
+							<option value="37">Василеостровская</option>
+							<option value="38">Гостиный двор</option>
+							<option value="39">Маяковская</option>
+							<option value="40">Площадь Александра Невского</option>
+							<option value="41">Елизаровская</option>
+							<option value="42">Ломоносовская</option>
+							<option value="43">Пролетарская</option>
+							<option value="44">Обухово</option>
+							<option value="45">Рыбацкое</option>
+							<option value="46">Спасская</option>
+							<option value="47">Достоевская</option>
+							<option value="48">Лиговский проспект</option>
+							<option value="49">Новочеркасская</option>
+							<option value="50">Ладожская</option>
+							<option value="51">Проспект Большевиков</option>
+							<option value="52">Улица Дыбенко</option>
+							<option value="53">Комендантский проспект</option>
+							<option value="54">Старая Деревня</option>
+							<option value="55">Крестовский остров</option>
+							<option value="56">Чкаловская</option>
+							<option value="57">Спортивная</option>
+							<option value="58">Адмиралтейская</option>
+							<option value="59">Садовая</option>
+							<option value="60">Звенигородская</option>
+							<option value="61">Обводной канал</option>
+							<option value="62">Волковская</option>
+							<option value="63">Бухарестская</option>
+							<option value="64">Международная</option>
+							<option value="65">Петроградская</option>
+						</select>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row"><label class="col"><input type="radio" name="sale_type">Продажа</label><label class="col"><input type="radio" name="sale_type">Аренда</label></p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price3" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from3"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to3"></label></p>
+										</div>
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Тип дома</option>
+												<option value="1">Жилой</option>
+												<option value="2">Нежилой</option>
+											</select>
+										</div>
+										<div class="field">
+											<p>Этаж</p>
+											<p><label>с&nbsp;<input type="text" name="price_from"></label> <label>по&nbsp;<input type="text" name="price_to"></label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Количество комнат:<br><label><input type="checkbox" name="room_value_1">1</label>&nbsp;<label><input type="checkbox" name="room_value_2">2</label></p>
+										</div>
+										<div class="field">
+											<p>Общее количество комнат:<br><label><input type="checkbox" name="room_value_2">2</label>&nbsp;<label><input type="checkbox" name="room_value_">3</label>&nbsp;<label><input type="checkbox" name="room_value_4">4+</label></p>
+										</div>
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;<input type="text" name="area_from"></label> <label>до&nbsp;<input type="text" name="area_to"></label>&nbsp;кв.м.</p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+										<div class="field">
+											<div><a href="#metro" data-reveal-id="metroMapPopUp" data-animation="fade" class="metroLink">Выбрать станцию метро</a></div>
+											<div class="metro-select-stantions"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<select class="metro-stantions-list" name="metro-stantions-list" multiple style="display:none;">
+							<option value="0">Девяткино</option>
+							<option value="1">Гражданский проспект</option>
+							<option value="2">Академическая</option>
+							<option value="3">Политехническая</option>
+							<option value="4">Площадь Мужества</option>
+							<option value="5">Лесная</option>
+							<option value="6">Выборгская</option>
+							<option value="7">Площадь Ленина</option>
+							<option value="8">Чернышевская</option>
+							<option value="9">Площадь Восстания</option>
+							<option value="10">Владимирская</option>
+							<option value="11">Пушкинская</option>
+							<option value="12">Технологический институт</option>
+							<option value="13">Балтийская</option>
+							<option value="14">Нарвская</option>
+							<option value="15">Кировский завод</option>
+							<option value="16">Автово</option>
+							<option value="17">Ленинский проспект</option>
+							<option value="18">Проспект Ветеранов</option>
+							<option value="19">Парнас</option>
+							<option value="20">Проспект Просвещения</option>
+							<option value="21">Озерки</option>
+							<option value="22">Удельная</option>
+							<option value="23">Пионерская</option>
+							<option value="24">Чёрная речка</option>
+							<option value="26">Горьковская</option>
+							<option value="27">Невский проспект</option>
+							<option value="28">Сенная площадь</option>
+							<option value="29">Фрунзенская</option>
+							<option value="30">Московские ворота</option>
+							<option value="31">Электросила</option>
+							<option value="32">Парк Победы</option>
+							<option value="33">Московская</option>
+							<option value="34">Звёздная</option>
+							<option value="35">Купчино</option>
+							<option value="36">Приморская</option>
+							<option value="37">Василеостровская</option>
+							<option value="38">Гостиный двор</option>
+							<option value="39">Маяковская</option>
+							<option value="40">Площадь Александра Невского</option>
+							<option value="41">Елизаровская</option>
+							<option value="42">Ломоносовская</option>
+							<option value="43">Пролетарская</option>
+							<option value="44">Обухово</option>
+							<option value="45">Рыбацкое</option>
+							<option value="46">Спасская</option>
+							<option value="47">Достоевская</option>
+							<option value="48">Лиговский проспект</option>
+							<option value="49">Новочеркасская</option>
+							<option value="50">Ладожская</option>
+							<option value="51">Проспект Большевиков</option>
+							<option value="52">Улица Дыбенко</option>
+							<option value="53">Комендантский проспект</option>
+							<option value="54">Старая Деревня</option>
+							<option value="55">Крестовский остров</option>
+							<option value="56">Чкаловская</option>
+							<option value="57">Спортивная</option>
+							<option value="58">Адмиралтейская</option>
+							<option value="59">Садовая</option>
+							<option value="60">Звенигородская</option>
+							<option value="61">Обводной канал</option>
+							<option value="62">Волковская</option>
+							<option value="63">Бухарестская</option>
+							<option value="64">Международная</option>
+							<option value="65">Петроградская</option>
+						</select>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row"><label class="col"><input type="radio" name="sale_type">Продажа</label><label class="col"><input type="radio" name="sale_type">Аренда</label></p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price4" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from4"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to4"></label></p>
+										</div>
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;<input type="text" name="area_from"></label> <label>до&nbsp;<input type="text" name="area_to"></label>&nbsp;кв.м.</p>
+										</div>
+									</div>
+								</td>
+								<td style="vertical-align:middle;">
+									<div class="gap">
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Вид использования</option>
+												<option value="1">Любой</option>
+												<option value="2">Гаражи</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+										<div class="field">
+											<div><a href="#metro" data-reveal-id="metroMapPopUp" data-animation="fade" class="metroLink">Выбрать станцию метро</a></div>
+											<div class="metro-select-stantions"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<select class="metro-stantions-list" name="metro-stantions-list" multiple style="display:none;">
+							<option value="0">Девяткино</option>
+							<option value="1">Гражданский проспект</option>
+							<option value="2">Академическая</option>
+							<option value="3">Политехническая</option>
+							<option value="4">Площадь Мужества</option>
+							<option value="5">Лесная</option>
+							<option value="6">Выборгская</option>
+							<option value="7">Площадь Ленина</option>
+							<option value="8">Чернышевская</option>
+							<option value="9">Площадь Восстания</option>
+							<option value="10">Владимирская</option>
+							<option value="11">Пушкинская</option>
+							<option value="12">Технологический институт</option>
+							<option value="13">Балтийская</option>
+							<option value="14">Нарвская</option>
+							<option value="15">Кировский завод</option>
+							<option value="16">Автово</option>
+							<option value="17">Ленинский проспект</option>
+							<option value="18">Проспект Ветеранов</option>
+							<option value="19">Парнас</option>
+							<option value="20">Проспект Просвещения</option>
+							<option value="21">Озерки</option>
+							<option value="22">Удельная</option>
+							<option value="23">Пионерская</option>
+							<option value="24">Чёрная речка</option>
+							<option value="26">Горьковская</option>
+							<option value="27">Невский проспект</option>
+							<option value="28">Сенная площадь</option>
+							<option value="29">Фрунзенская</option>
+							<option value="30">Московские ворота</option>
+							<option value="31">Электросила</option>
+							<option value="32">Парк Победы</option>
+							<option value="33">Московская</option>
+							<option value="34">Звёздная</option>
+							<option value="35">Купчино</option>
+							<option value="36">Приморская</option>
+							<option value="37">Василеостровская</option>
+							<option value="38">Гостиный двор</option>
+							<option value="39">Маяковская</option>
+							<option value="40">Площадь Александра Невского</option>
+							<option value="41">Елизаровская</option>
+							<option value="42">Ломоносовская</option>
+							<option value="43">Пролетарская</option>
+							<option value="44">Обухово</option>
+							<option value="45">Рыбацкое</option>
+							<option value="46">Спасская</option>
+							<option value="47">Достоевская</option>
+							<option value="48">Лиговский проспект</option>
+							<option value="49">Новочеркасская</option>
+							<option value="50">Ладожская</option>
+							<option value="51">Проспект Большевиков</option>
+							<option value="52">Улица Дыбенко</option>
+							<option value="53">Комендантский проспект</option>
+							<option value="54">Старая Деревня</option>
+							<option value="55">Крестовский остров</option>
+							<option value="56">Чкаловская</option>
+							<option value="57">Спортивная</option>
+							<option value="58">Адмиралтейская</option>
+							<option value="59">Садовая</option>
+							<option value="60">Звенигородская</option>
+							<option value="61">Обводной канал</option>
+							<option value="62">Волковская</option>
+							<option value="63">Бухарестская</option>
+							<option value="64">Международная</option>
+							<option value="65">Петроградская</option>
+						</select>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row"><label class="col"><input type="radio" name="sale_type">Продажа</label><label class="col"><input type="radio" name="sale_type">Аренда</label></p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price5" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from5"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to5"></label></p>
+										</div>
+										<div class="field">
+											<p>От СПБ</p>
+											<p><label>от&nbsp;<input type="text" name="price_from"></label> <label>до&nbsp;<input type="text" name="price_to">&nbsp;км</label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;<input type="text" name="area_from"></label> <label>до&nbsp;<input type="text" name="area_to"></label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<p>Участок:</p>
+											<p><label>от&nbsp;<input type="text" name="kitchen_area_from"></label> <label>до&nbsp;<input type="text" name="kitchen_area_to"></label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Назначение участка</option>
+												<option value="1">Любой</option>
+												<option value="2">Гаражи</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price6" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from6"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to6"></label></p>
+										</div>
+										<div class="field">
+											<p>От СПБ</p>
+											<p><label>от&nbsp;<input type="text" name="price_from"></label> <label>до&nbsp;<input type="text" name="price_to">&nbsp;км</label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Участок:</p>
+											<p><label>от&nbsp;<input type="text" name="kitchen_area_from"></label> <label>до&nbsp;<input type="text" name="kitchen_area_to"></label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<select name="house_type">
+												<option value="0" selected="select">Назначение участка</option>
+												<option value="1">Любой</option>
+												<option value="2">Гаражи</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Московский район</option>
+												<option value="1">Кузьминки</option>
+												<option value="2">Алтуфьево</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="region">
+												<option value="0" selected="select">Район</option>
+												<option value="1">Центральный (ЦАО)</option>
+												<option value="2">Восточный (ВАО)</option>
+											</select>
+										</div>
+										<div class="field">
+											<select name="city">
+												<option value="0" selected="select">Населённый пункт</option>
+												<option value="1">Москва</option>
+												<option value="2">Подольск</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div class="tab">
+					<form>
+						<table class="tb">
+							<tr>
+								<td colspan="2" style="width:50%;text-align:center;">
+									<div class="gap">
+										<div class="field">
+											<p><label><input type="radio" name="sale_type">Продажа</label>&nbsp;<label><input type="radio" name="sale_type">Аренда</label></p>
+										</div>
+										<div class="field" style="max-width:200px;margin: 0 auto;">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price7" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;<input type="text" name="price_from" id="price_from7"></label><label class="col">до&nbsp;<input type="text" name="price_to" id="price_to7"></label></p>
+										</div>
+									</div>
+								</td>
+								<td style="vertical-align: middle;">
+									<div class="gap">
+										<div class="field">
+											<select name="district">
+												<option value="0" selected="select">Страна</option>
+												<option value="1">Чехия</option>
+												<option value="2">Польша</option>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="search-form_map-link">
+				<a href="#">Показать на карте</a>
+			</div>
+		</div>
+		<div class="wrap page-content">
+			<div class="three-cols">
+				<div class="col">
+					<div class="aside">
+						<div class="aside_block aside_block-bd">
+							<div class="title">Быстрый поиск</div>
+							<div class="body">
+								<div class="fast-search" id="fast_search">
+									<form>
+										<table class="tb">
+											<tr>
+												<td colspan="2">
+													<p><b>Цена <i>(т.руб.)</i></b></p>
+													<div id="slider_range_price" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;<input type="text" name="price_from" id="price_from"></label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;<input type="text" name="price_to" id="price_to"></label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p><b>Площадь квартиры <i>(кв.м.)</i></b></p>
+													<div id="slider_range_area" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;<input type="text" name="area_from" id="area_from"></label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;<input type="text" name="area_to" id="area_to"></label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p><b>Срок сдачи <i>(гг.)</i></b></p>
+													<div id="slider_range_years" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;<input type="text" name="years_from" id="years_from"></label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;<input type="text" name="years_to" id="years_to"></label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<input type="submit" value="Найти" class="bg-link" />
+												</td>
+											</tr>
+										</table>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="aside_block aside_block-bd">
+							<div class="title">Новости</div>
+							<div class="body">
+								<dl class="last-news">
+									<dt><span>11.12.13</span></dt>
+									<dd>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo nulla id pariatur eum veritatis quae nihil itaque aliquid officia!</p>
+										<p><a href="#more">Подробнее</a></p>
+									</dd>
+									<dt><span>11.12.13</span></dt>
+									<dd>
+										<p> Harum, explicabo, nemo nesciunt quaerat repellat mollitia tenetur ullam quibusdam.</p>
+										<p><a href="#more">Подробнее</a></p>
+									</dd>
+									<dt><span>11.12.13</span></dt>
+									<dd>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, nemo nulla id pariatur eum veritatis quae nihil itaque aliquid officia!</p>
+										<p><a href="#more">Подробнее</a></p>
+									</dd>
+								</dl>
+								<p align="right"><a href="#" class="to-all-news">Все новости</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" id="tab_result">
+					<div class="results tab active">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+					<div class="results tab">
+						<div class="result object-card">
+							<div class="gap">
+								<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+								<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="aside">
+						<div class="aside_block">
+							<div class="body">
+								<div class="youtube">
+									<img src="{{ STATIC_URL }}i/youtube.jpg" alt="Youtube">
+								</div>
+								<p><a href="#">Посмотреть всё видео</a></p>
+							</div>
+						</div>
+						<div class="aside_block aside_block-bd">
+							<div class="title">
+								Специальные предложения
+							</div>
+							<div class="body">
+								<div class="special-offers">
+									<div class="offer object-card">
+										<div class="gap">
+											<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+											<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+										</div>
+									</div>
+									<div class="offer object-card">
+										<div class="gap">
+											<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+											<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="wrap footer">
+			<div class="footer-separator"></div>
+			<div class="three-cols">
+				<div class="col">
+					<div class="logo"><a href="/"><img src="{{ STATIC_URL }}i/logo.png" alt="78 регион"></a></div>
+					<div class="copy">
+						<p>&copy;&nbsp;78 регион, 2013<br>Все права защищены</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="three-cols">
+						<div class="col">
+							<div class="main-menu">
+								<ul>
+									<li><a href="#">Наши услуги</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Партнёрам</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="catalog-menu">
+								<ul>
+									<li><a href="#">Объекты на карте</a></li>
+									<li><a href="#">Дома в центре</a></li>
+									<li><a href="#">Дома на севере</a></li>
+									<li><a href="#">Дома на юге</a></li>
+									<li><a href="#">Квартиры у метро</a></li>
+									<li><a href="#">Загородная недвижимость</a></li>
+									<li><a href="#">Зарубежная недвижимость</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="social">
+								<ul>
+									<li><a href="//vk.com"><img src="{{ STATIC_URL }}i/ico/vk.png" alt="Вконтакте"></a></li>
+									<li><a href="//twitter.com"><img src="{{ STATIC_URL }}i/ico/tw.png" alt="Твиттер"></a></li>
+									<li><a href="//odnoklassniki.ru"><img src="{{ STATIC_URL }}i/ico/ok.png" alt="Одноклассники"></a></li>
+									<li><a href="//fb.com"><img src="{{ STATIC_URL }}i/ico/fb.png" alt="Фейсбук"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="contacts">
+						<div class="phone">
+							<img src="{{ STATIC_URL }}i/ico/phone.png" alt="Телефоны">
+							<p>8 (123) 456-78-90</p>
+							<p>8 (123) 098-76-54</p>
+						</div>
+						<div class="address">
+							<img src="{{ STATIC_URL }}i/ico/home.png" alt="Адрес">
+							<p>Ул. Коммунистов-пионеров 45/35, оф. 10, г. Москва</p>
+						</div>
+					</div>
+					<div class="callback">
+						<a href="#" class="bg-link">Заказать звонок</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+<div id="metroMapPopUp" class="reveal-modal">
+	<div class="metro-map" id="metro-map">
+		<img class="metro-map__img metro-map__img_normal" src="{{ STATIC_URL }}css/metro/metro.png" alt="Карта метро" class="map">
+		<img class="metro-map__img metro-map__img_blur" src="{{ STATIC_URL }}css/metro/metro_blur.png" alt="Карта метро" class="map">
+		<div class="metro-map__stantions">
+			<div class="item">Девяткино</div>
+			<div class="item">Гражданский проспект</div>
+			<div class="item">Академическая</div>
+			<div class="item">Политехническая</div>
+			<div class="item">Площадь Мужества</div>
+			<div class="item">Лесная</div>
+			<div class="item">Выборгская</div>
+			<div class="item">Площадь Ленина</div>
+			<div class="item">Чернышевская</div>
+			<div class="item">Площадь Восстания</div>
+			<div class="item">Владимирская</div>
+			<div class="item">Пушкинская</div>
+			<div class="item">Технологический институт</div>
+			<div class="item">Балтийская</div>
+			<div class="item">Нарвская</div>
+			<div class="item">Кировский завод</div>
+			<div class="item">Автово</div>
+			<div class="item">Ленинский проспект</div>
+			<div class="item">Проспект Ветеранов</div>
+			<div class="item">Парнас</div>
+			<div class="item">Проспект Просвещения</div>
+			<div class="item">Озерки</div>
+			<div class="item">Удельная</div>
+			<div class="item">Пионерская</div>
+			<div class="item">Чёрная речка</div>
+			<div class="item">Горьковская</div>
+			<div class="item">Невский проспект</div>
+			<div class="item">Сенная площадь</div>
+			<div class="item">Фрунзенская</div>
+			<div class="item">Московские ворота</div>
+			<div class="item">Электросила</div>
+			<div class="item">Парк Победы</div>
+			<div class="item">Московская</div>
+			<div class="item">Звёздная</div>
+			<div class="item">Купчино</div>
+			<div class="item">Приморская</div>
+			<div class="item">Василеостровская</div>
+			<div class="item">Гостиный двор</div>
+			<div class="item">Маяковская</div>
+			<div class="item">Площадь Александра Невского</div>
+			<div class="item">Елизаровская</div>
+			<div class="item">Ломоносовская</div>
+			<div class="item">Пролетарская</div>
+			<div class="item">Обухово</div>
+			<div class="item">Рыбацкое</div>
+			<div class="item">Спасская</div>
+			<div class="item">Достоевская</div>
+			<div class="item">Лиговский проспект</div>
+			<div class="item">Новочеркасская</div>
+			<div class="item">Ладожская</div>
+			<div class="item">Проспект Большевиков</div>
+			<div class="item">Улица Дыбенко</div>
+			<div class="item">Комендантский проспект</div>
+			<div class="item">Старая Деревня</div>
+			<div class="item">Крестовский остров</div>
+			<div class="item">Чкаловская</div>
+			<div class="item">Спортивная</div>
+			<div class="item">Адмиралтейская</div>
+			<div class="item">Садовая</div>
+			<div class="item">Звенигородская</div>
+			<div class="item">Обводной канал</div>
+			<div class="item">Волковская</div>
+			<div class="item">Бухарестская</div>
+			<div class="item">Международная</div>
+			<div class="item">Петроградская</div>
+		</div>
+	</div>
+	<div  class="metro-map-save"><input type="button" class="close-reveal-modal bg-link" value="Сохранить выбранные и закрыть окно"><span>&nbsp;или <a href="#clear-all" class="metro-map-clear">очистить</a></span></div>
+	<a class="close-reveal-modal close-reveal-modal_link">×</a>
+</div>
+
+</body>
+</html>

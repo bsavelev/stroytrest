@@ -333,14 +333,14 @@ class ApartmentPrice(models.Model):
     three_bedroom_price_per_meter - цена за метр квадратный трехкомнатной квартиры
     """
 
-    studio_price = models.DecimalField(u'Цена студии', max_digits=9)
-    studio_price_per_meter = models.DecimalField(u'Цена метра студии', max_digits=9)
-    one_bedroom_price = models.DecimalField(u'Цена однокомнатной', max_digits=9)
-    one_bedroom_price_per_meter = models.DecimalField(u'Цена метра однокомнатной', max_digits=9)
-    two_bedroom_price = models.DecimalField(u'Цена двухкомнатной', max_digits=9)
-    two_bedroom_price_per_meter = models.DecimalField(u'Цена метра двухкомнатной', max_digits=9)
-    three_bedroom_price = models.DecimalField(u'Цена трехкомнатной', max_digits=9)
-    three_bedroom_price_per_meter = models.DecimalField(u'Цена метра трехкомнатной', max_digits=9)
+    studio_price = models.DecimalField(u'Цена студии', max_digits=9, decimal_places=0)
+    studio_price_per_meter = models.DecimalField(u'Цена метра студии', max_digits=9, decimal_places=0)
+    one_bedroom_price = models.DecimalField(u'Цена однокомнатной', max_digits=9, decimal_places=0)
+    one_bedroom_price_per_meter = models.DecimalField(u'Цена метра однокомнатной', max_digits=9, decimal_places=0)
+    two_bedroom_price = models.DecimalField(u'Цена двухкомнатной', max_digits=9, decimal_places=0)
+    two_bedroom_price_per_meter = models.DecimalField(u'Цена метра двухкомнатной', max_digits=9, decimal_places=0)
+    three_bedroom_price = models.DecimalField(u'Цена трехкомнатной', max_digits=9, decimal_places=0)
+    three_bedroom_price_per_meter = models.DecimalField(u'Цена метра трехкомнатной', max_digits=9, decimal_places=0)
 
     def __unicode__(self):
         return u'%s' % (self.id,)
