@@ -4,6 +4,7 @@
 # e-mail: mikle.alex@gmail.com
 
 from os.path import abspath, join, dirname
+from socket import gethostname
 
 PROJECT_DIR = abspath(join(abspath(dirname(__file__)), '..'))
 STATIC_FILES = abspath(join(PROJECT_DIR, 'static_files'))
@@ -11,7 +12,15 @@ STATIC_FILES = abspath(join(PROJECT_DIR, 'static_files'))
 def get_filepath(dir1, dir2):
     return abspath(join(dir1, dir2))
 
-DEBUG = True
+HOSTNAME = gethostname()
+LOCALDEV = 'MacBook-Air-michael.local'
+
+if HOSTNAME == LOCALDEV:
+    from local_settings import *
+else:
+    from prod_settings import *
+
+
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -19,18 +28,6 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'stroytrest_dev',                      # Or path to database file if using sqlite3.
-        # The following settings are not used with sqlite3:
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
-    }
-}
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
