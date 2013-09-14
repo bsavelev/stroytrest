@@ -1,7 +1,8 @@
 # -*- coding:utf-8 -*-
 __author__ = 'michael'
 
-DEBUG = False
+#DEBUG = False
+DEBUG = True
 
 DATABASES = {
     'default': {
