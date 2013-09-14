@@ -15,10 +15,6 @@ def get_filepath(dir1, dir2):
 HOSTNAME = gethostname()
 LOCALDEV = 'MacBook-Air-michael.local'
 
-
-
-TEMPLATE_DEBUG = DEBUG
-
 ADMINS = (
      ('AlexandrovMichael', 'mikle.alex@gmail.com'),
 )
@@ -141,6 +137,8 @@ if HOSTNAME == LOCALDEV:
     from local_settings import *
 else:
     from prod_settings import *
+
+TEMPLATE_DEBUG = DEBUG
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
