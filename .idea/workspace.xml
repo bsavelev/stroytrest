@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
+    <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="local and dev settings">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379156996753" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379157137354" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379155212978" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
@@ -411,7 +411,11 @@
       <created>1379157001474</created>
       <updated>1379157001474</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="local and dev settings">
+      <created>1379157128061</created>
+      <updated>1379157128061</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
