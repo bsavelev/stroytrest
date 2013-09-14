@@ -14,3 +14,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default.
     }
 }
+
+
+
+INSTALLED_APPS = INSTALLED_APPS + ('guincorn',)
