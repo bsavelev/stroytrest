@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/prod_settings.py" afterPath="$PROJECT_DIR$/project/prod_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/settings.py" afterPath="$PROJECT_DIR$/project/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379157417407" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379158175250" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379155212978" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
@@ -59,19 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="local_settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod_settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="45" selection-start="664" selection-end="664" vertical-scroll-proportion="0.39256197">
+            <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.06311361">
               <folding />
             </state>
           </provider>
@@ -482,7 +472,11 @@
       <created>1379157422911</created>
       <updated>1379157422911</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="guincorn">
+      <created>1379158177437</created>
+      <updated>1379158177437</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -571,7 +565,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="500.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="guincorn" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -591,6 +585,7 @@
     <MESSAGE value="static settings&#10;" />
     <MESSAGE value="local and dev settings" />
     <MESSAGE value="500.html" />
+    <MESSAGE value="guincorn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -684,16 +679,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/local_settings.py">
+    <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+        <state line="18" column="0" selection-start="618" selection-end="618" vertical-scroll-proportion="0.37190083">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
+    <entry file="file://$PROJECT_DIR$/project/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="664" selection-end="664" vertical-scroll-proportion="0.39256197">
+        <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.06311361">
           <folding />
         </state>
       </provider>
