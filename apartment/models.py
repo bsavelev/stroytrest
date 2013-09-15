@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from django.db import models
-from new_building.models import Building
+from new_building.models import NewBuilding, Building
 from common.models import SystemMixin
 from new_building.models import Terms
 
@@ -27,14 +27,12 @@ class ApartmentObj(models.Model):
     Объект квартир
 
     Поля:
-    building - комплекс, сддание
     number_of_rooms - количество комнат
     area - площадь квартиры
     toilet - сан. узел
     floor - этаж
     """
 
-    building = models.ForeignKey(Building, verbose_name=u'Комплекс', related_name='apartmentobj_building_related')
     number_of_rooms = models.ForeignKey('NumberOfRooms',
                                         verbose_name=u'Количество комнат',
                                         related_name='apartmentobj_numberofrooms_related')
@@ -116,9 +114,11 @@ class NewApartment(ApartmentObj, SystemMixin):
     Квартира в новостройках
     
     Поля:
+    building - комплекс новостроек
     price - цена квартиры 
     """
-    
+
+    building = models.ForeignKey(NewBuilding, verbose_name=u'Комплекс', related_name='newapartment_building_related')
     price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
 
     def __unicode__(self):
@@ -134,11 +134,15 @@ class ApartmentSecondary(ApartmentObj, SystemMixin):
     Вторичное жилье, вартиры
     
     Поля:
+    building - комплекс вторичного жилья
     sale - продажа? или аренда
     terms - условия
     price - цена
     """
 
+    building = models.ForeignKey(BuildingApertment,
+                                 verbose_name=u'Комплекс',
+                                 related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
     terms = models.ForeignKey(Terms, verbose_name=u'Условия', related_name='apartmentsecondary_terms_related')
     price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
@@ -156,11 +160,15 @@ class RoomsSecondary(ApartmentObj, SystemMixin):
     Вторичные комнаты
 
     Поля:
+    building - комплекс вторичного жилья
     sale - продажа? или аренда
     rooms_numbers - количество комнат на продажу, аренду
     price - цена
     """
 
+    building = models.ForeignKey(BuildingApertment,
+                                 verbose_name=u'Комплекс',
+                                 related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
     rooms_numbers = models.PositiveSmallIntegerField(u'Количество комнат на продажу/аренду')
     price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
@@ -171,6 +179,9 @@ class RoomsSecondary(ApartmentObj, SystemMixin):
     class Meta:
         verbose_name = u'Вторичная комната'
         verbose_name_plural = u'Вторичные комнаты'
+
+
+#TODO: - сделать фотографии пропущенные
 
 
 

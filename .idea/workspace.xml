@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apartment/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commercial_estate/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apartment/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commercial_estate/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/apartment/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commercial_estate/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models.py" afterPath="$PROJECT_DIR$/common/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apartment/models.py" afterPath="$PROJECT_DIR$/apartment/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commercial_estate/models.py" afterPath="$PROJECT_DIR$/commercial_estate/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_building/models.py" afterPath="$PROJECT_DIR$/new_building/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238593139" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379243013127" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238542056" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
     <file path="/start_script.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299852120" ignored="false" />
-    <file path="/models.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379242609610" ignored="false" />
+    <file path="/models.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379244401310" ignored="false" />
     <file path="$PROJECT_DIR$/compleks/common/__init__.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378572669950" ignored="false" />
     <file path="/urls.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238566668" ignored="false" />
     <file path="/views.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378803995018" ignored="false" />
@@ -48,7 +43,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new_building/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="39" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0">
+            <state line="353" column="9" selection-start="9876" selection-end="9876" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#23#51#0" expanded="true" />
               </folding>
@@ -65,10 +60,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apartment/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="7" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-1.7561984">
+            <state line="163" column="29" selection-start="4397" selection-end="4397" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#23#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commercial_estate/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.73140496">
               <folding>
                 <element signature="e#23#51#0" expanded="true" />
               </folding>
@@ -102,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/compleks/models.py" />
         <option value="$PROJECT_DIR$/building/models.py" />
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/templates/card.html" />
@@ -118,6 +123,7 @@
         <option value="$PROJECT_DIR$/common/models.py" />
         <option value="$PROJECT_DIR$/new_building/models.py" />
         <option value="$PROJECT_DIR$/apartment/models.py" />
+        <option value="$PROJECT_DIR$/commercial_estate/models.py" />
       </list>
     </option>
   </component>
@@ -576,7 +582,11 @@
       <created>1379238595349</created>
       <updated>1379238595349</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add apartment">
+      <created>1379243014773</created>
+      <updated>1379243014773</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -601,14 +611,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550932" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550932" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26040173" sideWeight="0.42705572" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -665,7 +675,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="add apartment" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -687,16 +697,12 @@
     <MESSAGE value="500.html" />
     <MESSAGE value="guincorn" />
     <MESSAGE value="settings" />
+    <MESSAGE value="add apartment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="44" selection-start="9723" selection-end="9727" vertical-scroll-proportion="0.3328592" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new_building/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -784,7 +790,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_building/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="39" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0">
+        <state line="353" column="9" selection-start="9876" selection-end="9876" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#23#51#0" expanded="true" />
           </folding>
@@ -793,7 +799,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apartment/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="7" selection-start="1306" selection-end="1306" vertical-scroll-proportion="-1.7561984">
+        <state line="163" column="29" selection-start="4397" selection-end="4397" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#23#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commercial_estate/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.73140496">
           <folding>
             <element signature="e#23#51#0" expanded="true" />
           </folding>
