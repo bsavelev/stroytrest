@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 from django.db import models
-
-from common.models import SystemMeta
+from common.models import SystemMixin
 
 
 class Building(models.Model):
@@ -188,7 +187,7 @@ class Metro(models.Model):
         verbose_name_plural = u'Станции метро'
 
 
-class NewBuilding(SystemMeta):
+class NewBuilding(Building, SystemMixin):
     """
     Сдание новостройки
 

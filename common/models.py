@@ -5,9 +5,9 @@ from django.db import models
 from django.contrib.auth.models import User, Group
 
 
-class SystemMeta(models.Model):
+class SystemMixin(object):
     """
-    Абстракная модель
+    Микшин модель
 
     Поля:
     description - описание сущности, для общего отображения
@@ -26,9 +26,6 @@ class SystemMeta(models.Model):
                                     verbose_name=u'Группа создателя',
                                     related_name='%(app_label)s_%(class)s_related')
     created_date = models.DateTimeField(u'Дата создания')
-
-    class Meta:
-        abstract = True
 
 
 class HistoryMeta(models.Model):
