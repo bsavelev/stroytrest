@@ -36,7 +36,7 @@ class CommercialEstate(ApartmentObj, SystemMixin):
     type_of_use = models.ForeignKey('TypeOfUse',
                                     verbose_name=u'Вид использования',
                                     related_name='commecialestate_typeofuse_related')
-    communications = models.ForeignKey('Communications',
+    communications = models.ForeignKey('CommunicationsWithInternet',
                                        verbose_name=u'Комуникации',
                                        related_name='commercialestate_communications_related')
     building = models.ForeignKey('BuildingCommerce',
@@ -49,3 +49,125 @@ class CommercialEstate(ApartmentObj, SystemMixin):
     class Meta:
         verbose_name = u'Комерческая недвижимость'
         verbose_name_plural = u'Комерческая недвижимость'
+
+
+class TypeOfUse(models.Model):
+    """
+    Вид использования
+
+    Поля:
+    name - вид использования
+    """
+
+    name = models.CharField(u'Вид использования', max_length=250)
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Вид использования'
+        verbose_name_plural = u'Виды использования'
+
+
+class Communications(models.Model):
+    """
+    Коммуникации
+
+    Поля:
+    electricity - электричество
+    water - вода
+    heating - отопление
+    gas - газ
+    """
+
+    electricity = models.ForeignKey('Electricity',
+                                    verbose_name=u'Электричество',
+                                    related_name='communications_electricity_related')
+    water = models.ForeignKey('Water', verbose_name=u'Вода', related_name='communications_water_related')
+    heating = models.ForeignKey('Heating', verbose_name=u'Отопление', related_name='communications_heating_related')
+    gas = models.BooleanField(u'Газ')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Коммуникации'
+        verbose_name_plural = u'Коммуникации'
+
+
+class CommunicationsWithInternet(Communications):
+    """
+    Коммуникации с интернетом
+
+    Поля:
+    internet - наличие интернета
+    """
+
+    internet = models.BooleanField(u'Интернет')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Комуникации с интернетом'
+        verbose_name_plural = u'Коммуникации с интернетом'
+
+
+class Electricity(models.Model):
+    """
+    Электричество
+
+    Поля:
+    name - вид электричества
+    """
+
+    name = models.CharField(u'Наименование', max_length=250)
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Электричество'
+        verbose_name_plural = u'Электричество'
+
+
+class Water(models.Model):
+    """
+    Вода
+
+    Поля:
+    name - вид водяной комуникации
+    """
+
+    name = models.CharField(u'Наименование', max_length=250)
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Вода'
+        verbose_name_plural = u'Вода'
+
+
+class Heating(models.Model):
+    """
+    Отопление
+
+    Поля:
+    name - вид отопления
+    """
+
+    name = models.CharField(u'Наименование', max_length=250)
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Отопление'
+        verbose_name_plural = u'Отопление'
+
+
+
+#TODO: сделать admin.py
+
+
