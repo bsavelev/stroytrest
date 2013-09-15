@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from django.db import models
 from new_building.models import Building
-from common.models import SystemMixin
+from common.models import SystemMixin, PriceMixin
 from apartment.models import ApartmentObj
 
 
@@ -21,7 +21,7 @@ class BuildingCommerce(Building, SystemMixin):
         verbose_name_plural = u'Комплекс комерческой недвижимости'
 
 
-class CommercialEstate(ApartmentObj, SystemMixin):
+class CommercialEstate(ApartmentObj, SystemMixin, PriceMixin):
     """
     Комерческая недвижимость
 

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from django.db import models
 from new_building.models import NewBuilding, Building
-from common.models import SystemMixin
+from common.models import SystemMixin, PriceMixin, PhotoMeta
 from new_building.models import Terms
 
 
@@ -109,17 +109,15 @@ class Toilet(models.Model):
         verbose_name_plural = u'Сан.узел'
         
         
-class NewApartment(ApartmentObj, SystemMixin):
+class NewApartment(ApartmentObj, SystemMixin, PriceMixin):
     """
     Квартира в новостройках
     
     Поля:
     building - комплекс новостроек
-    price - цена квартиры 
     """
 
     building = models.ForeignKey(NewBuilding, verbose_name=u'Комплекс', related_name='newapartment_building_related')
-    price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
 
     def __unicode__(self):
         return u'%s' % (self.id,)
@@ -127,9 +125,30 @@ class NewApartment(ApartmentObj, SystemMixin):
     class Meta:
         verbose_name = u'Квартира в новостройках'
         verbose_name_plural = u'Квартиры в вновостройках'
+
+
+class PhotoNewApartment(PhotoMeta):
+    """
+    Фото для квартир новстроект
+
+    Поля:
+    new_apartment - квартира новостройка
+    """
+
+    new_apartment = models.ForeignKey('NewApartment',
+                                      verbose_name=u'Квартира в новостройке',
+                                      related_name='photonewapartment_new_apartment_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото квартир новостроект'
+        verbose_name_plural = u'Фото квартир новостроек'
+
         
         
-class ApartmentSecondary(ApartmentObj, SystemMixin):
+class ApartmentSecondary(ApartmentObj, SystemMixin, PriceMixin):
     """
     Вторичное жилье, вартиры
     
@@ -137,7 +156,6 @@ class ApartmentSecondary(ApartmentObj, SystemMixin):
     building - комплекс вторичного жилья
     sale - продажа? или аренда
     terms - условия
-    price - цена
     """
 
     building = models.ForeignKey(BuildingApertment,
@@ -145,7 +163,6 @@ class ApartmentSecondary(ApartmentObj, SystemMixin):
                                  related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
     terms = models.ForeignKey(Terms, verbose_name=u'Условия', related_name='apartmentsecondary_terms_related')
-    price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
 
     def __unicode__(self):
         return u'%s' % (self.id,)
@@ -155,7 +172,28 @@ class ApartmentSecondary(ApartmentObj, SystemMixin):
         verbose_name_plural = u'Вторичные квартиры'
 
 
-class RoomsSecondary(ApartmentObj, SystemMixin):
+class PhotoApartmentSecondary(PhotoMeta):
+    """
+    Фотографии квторичных квартир
+
+    Поля:
+    apartment_secondary - объект вторичных квартир
+    """
+
+    apartment_secondary = models.ForeignKey('ApartmentSecondary',
+                                            verbose_name=u'Вторичные квартриры',
+                                            related_name='photoapartmentsecondary_apartment_secondary_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото вторичных квартир'
+        verbose_name_plural = u'Фото вторичных квартир'
+
+
+
+class RoomsSecondary(ApartmentObj, SystemMixin, PriceMixin):
     """
     Вторичные комнаты
 
@@ -163,7 +201,6 @@ class RoomsSecondary(ApartmentObj, SystemMixin):
     building - комплекс вторичного жилья
     sale - продажа? или аренда
     rooms_numbers - количество комнат на продажу, аренду
-    price - цена
     """
 
     building = models.ForeignKey(BuildingApertment,
@@ -171,7 +208,6 @@ class RoomsSecondary(ApartmentObj, SystemMixin):
                                  related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
     rooms_numbers = models.PositiveSmallIntegerField(u'Количество комнат на продажу/аренду')
-    price = models.DecimalField(u'Цена', max_digits=9, decimal_places=0)
 
     def __unicode__(self):
         return u'%s' % (self.id,)
