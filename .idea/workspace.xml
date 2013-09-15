@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/local_settings.py" afterPath="$PROJECT_DIR$/project/local_settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379189512464" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379189519516" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379155212978" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
@@ -15,7 +16,7 @@
     <file path="$PROJECT_DIR$/compleks/common/__init__.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378572669950" ignored="false" />
     <file path="/urls.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378761798288" ignored="false" />
     <file path="/views.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378803995018" ignored="false" />
-    <file path="/local_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379155093674" ignored="false" />
+    <file path="/local_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379237795623" ignored="false" />
     <file path="/prod_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379189495802" ignored="false" />
     <file path="/500.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379157378277" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,7 +70,7 @@
       <file leaf-file-name="local_settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/local_settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.06311361">
+            <state line="13" column="20" selection-start="583" selection-end="583" vertical-scroll-proportion="0.27349228">
               <folding />
             </state>
           </provider>
@@ -119,12 +120,12 @@
         <option value="$PROJECT_DIR$/project/urls.py" />
         <option value="$PROJECT_DIR$/new_building/models.py" />
         <option value="$PROJECT_DIR$/new_building/views.py" />
-        <option value="$PROJECT_DIR$/project/local_settings.py" />
         <option value="$PROJECT_DIR$/project/dev_settings.py" />
         <option value="$PROJECT_DIR$/static_files/static/html/500.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/project/prod_settings.py" />
+        <option value="$PROJECT_DIR$/project/local_settings.py" />
       </list>
     </option>
   </component>
@@ -511,7 +512,11 @@
       <created>1379189514570</created>
       <updated>1379189514570</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="guincorn">
+      <created>1379189520981</created>
+      <updated>1379189520981</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -721,7 +726,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.06311361">
+        <state line="13" column="20" selection-start="583" selection-end="583" vertical-scroll-proportion="0.27349228">
           <folding />
         </state>
       </provider>
