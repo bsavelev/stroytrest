@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/local_settings.py" afterPath="$PROJECT_DIR$/project/local_settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/prod_settings.py" afterPath="$PROJECT_DIR$/project/prod_settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/settings.py" afterPath="$PROJECT_DIR$/project/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/urls.py" afterPath="$PROJECT_DIR$/project/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379237977285" ignored="false" />
-    <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379155212978" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238140024" ignored="false" />
+    <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238542056" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
     <file path="/start_script.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299852120" ignored="false" />
     <file path="/models.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378762186039" ignored="false" />
     <file path="$PROJECT_DIR$/compleks/common/__init__.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378572669950" ignored="false" />
-    <file path="/urls.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378761798288" ignored="false" />
+    <file path="/urls.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238566668" ignored="false" />
     <file path="/views.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378803995018" ignored="false" />
     <file path="/local_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238070371" ignored="false" />
     <file path="/prod_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238117291" ignored="false" />
@@ -51,7 +51,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+            <state line="138" column="3" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#124#166#0" expanded="true" />
               </folding>
@@ -68,28 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local_settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/local_settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod_settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="351" selection-end="351" vertical-scroll-proportion="0.21037868">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="1" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
+            <state line="28" column="25" selection-start="897" selection-end="897" vertical-scroll-proportion="0.5371901">
               <folding />
             </state>
           </provider>
@@ -127,15 +109,15 @@
         <option value="$PROJECT_DIR$/templates/list.html" />
         <option value="$PROJECT_DIR$/templates/card.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/project/urls.py" />
         <option value="$PROJECT_DIR$/new_building/models.py" />
         <option value="$PROJECT_DIR$/new_building/views.py" />
         <option value="$PROJECT_DIR$/project/dev_settings.py" />
         <option value="$PROJECT_DIR$/static_files/static/html/500.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/project/local_settings.py" />
         <option value="$PROJECT_DIR$/project/prod_settings.py" />
+        <option value="$PROJECT_DIR$/project/settings.py" />
+        <option value="$PROJECT_DIR$/project/urls.py" />
       </list>
     </option>
   </component>
@@ -530,7 +512,11 @@
       <created>1379237980430</created>
       <updated>1379237980430</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="settings">
+      <created>1379238142273</created>
+      <updated>1379238142273</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -619,7 +605,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="guincorn" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -640,6 +626,7 @@
     <MESSAGE value="local and dev settings" />
     <MESSAGE value="500.html" />
     <MESSAGE value="guincorn" />
+    <MESSAGE value="settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -675,13 +662,6 @@
         <state line="1070" column="91" selection-start="44582" selection-end="44582" vertical-scroll-proportion="-213.32" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="77" selection-start="8286" selection-end="8291" vertical-scroll-proportion="0.85240966" />
@@ -708,6 +688,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/local_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="570" selection-end="570" vertical-scroll-proportion="0.27349228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new_building/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="342" column="115" selection-start="9556" selection-end="9556" vertical-scroll-proportion="0.0">
@@ -717,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+        <state line="138" column="3" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#124#166#0" expanded="true" />
           </folding>
@@ -731,16 +725,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/local_settings.py">
+    <entry file="file://$PROJECT_DIR$/project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/prod_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="351" selection-end="351" vertical-scroll-proportion="0.21037868">
+        <state line="28" column="25" selection-start="897" selection-end="897" vertical-scroll-proportion="0.5371901">
           <folding />
         </state>
       </provider>

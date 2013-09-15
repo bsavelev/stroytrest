@@ -15,6 +15,8 @@ def get_filepath(dir1, dir2):
 HOSTNAME = gethostname()
 LOCALDEV = 'MacBook-Air-michael.local'
 
+THISISLOCALDEV = True if HOSTNAME == LOCALDEV else False
+
 ADMINS = (
      ('AlexandrovMichael', 'mikle.alex@gmail.com'),
 )
@@ -132,8 +134,7 @@ INSTALLED_APPS = (
     'new_building',
 )
 
-
-if HOSTNAME == LOCALDEV:
+if THISISLOCALDEV:
     from local_settings import *
 else:
     from prod_settings import *
