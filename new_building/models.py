@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from django.db import models
-from common.models import SystemMixin
+from common.models import SystemMixin, PhotoMeta
 
 
 class Building(models.Model):
@@ -225,6 +225,27 @@ class NewBuilding(Building, SystemMixin):
     class Meta:
         verbose_name = u'Новостройка'
         verbose_name_plural = u'Новостройки'
+
+
+class PhotoNewBuilding(PhotoMeta):
+    """
+    Фото комплекса новостроек
+
+    Поля:
+    new_building - объект комплекса новостроек
+    """
+
+    new_building = models.ForeignKey('NewBuilding',
+                                     verbose_name=u'Комплекс новостроек',
+                                     related_name='photonewbuilding_new_building_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото комплекса новостроек'
+        verbose_name_plural = u'Фото комплекса новостроек'
+
 
 
 class Contracts(models.Model):

@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from django.db import models
 from new_building.models import Building
-from common.models import SystemMixin, PriceMixin
+from common.models import SystemMixin, PriceMixin, PhotoMeta
 from apartment.models import ApartmentObj
 
 
@@ -19,6 +19,27 @@ class BuildingCommerce(Building, SystemMixin):
     class Meta:
         verbose_name = u'Комплекс комерческой недвижимости'
         verbose_name_plural = u'Комплекс комерческой недвижимости'
+        
+        
+class PhotoBildingCommerce(PhotoMeta):
+    """
+    Фото для коплекса комерческой недвижимости
+    
+    Поля:
+    building_commerce - объект коплекс комерческой недвижимости
+    """
+
+    building_commerce = models.ForeignKey('BuildingCommerce', 
+                                          verbose_name=u'Комплекс комерческой недвижимости', 
+                                          related_name='photobuildingcommecrce_building_commerce_related')    
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+        
+    class Meta:
+        verbose_name = u'Фото комплекса ком. недвижимости'
+        verbose_name_plural = u'Фото комплекса ком. недвижимости'
+
 
 
 class CommercialEstate(ApartmentObj, SystemMixin, PriceMixin):
@@ -49,6 +70,27 @@ class CommercialEstate(ApartmentObj, SystemMixin, PriceMixin):
     class Meta:
         verbose_name = u'Комерческая недвижимость'
         verbose_name_plural = u'Комерческая недвижимость'
+        
+        
+class PhotoCommercialEstate(PhotoMeta):
+    """
+    Фото комерческой недвижимости
+    
+    Поля:
+    commercial_estate - объект комерческой недвижимости
+    """
+    
+    commercial_estate = models.ForeignKey('CommercialEstate',
+                                          verbose_name=u'Комерческая недвижимость',
+                                          related_name='photocommercialestate_commercial_estate_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+        
+    class Meta:
+        verbose_name = u'Фото комерческой недвижимости'
+        verbose_name_plural = u'Фото комерческой недвижимости'
+
 
 
 class TypeOfUse(models.Model):

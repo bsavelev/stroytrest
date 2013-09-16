@@ -5,7 +5,7 @@ from common.models import SystemMixin, PriceMixin, PhotoMeta
 from new_building.models import Terms
 
 
-class BuildingApertment(Building, SystemMixin):
+class BuildingApartment(Building, SystemMixin):
     """
     Комплекс для квартир
     
@@ -17,8 +17,28 @@ class BuildingApertment(Building, SystemMixin):
         return u'%s' % (self.id,)
         
     class Meta:
-        verbose_name = u''
-        verbose_name_plural = u''
+        verbose_name = u'Комплекс для квартир'
+        verbose_name_plural = u'Коплекс для квартир'
+
+
+class PhotoBuildingApartment(PhotoMeta):
+    """
+    Фото для комплекса квартир вторичек
+
+    Поля:
+    building_apartment - объект комплекс вторичных квартир
+    """
+
+    building_apartment = models.ForeignKey('BuildingApartment',
+                                           verbose_name=u'Комплекс вторичных квартир',
+                                           related_name='photobuildingapartment_building_apartment_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото комплекса вторичных квартир'
+        verbose_name_plural = u'Фото комплекса вторичных квартир'
 
 
 
@@ -57,7 +77,6 @@ class NumberOfRooms(models.Model):
     """
 
     name = models.CharField(u'Наименование', max_length=50)
-
 
     def __unicode__(self):
         return u'%s' % (self.id,)
@@ -125,6 +144,25 @@ class NewApartment(ApartmentObj, SystemMixin, PriceMixin):
     class Meta:
         verbose_name = u'Квартира в новостройках'
         verbose_name_plural = u'Квартиры в вновостройках'
+        
+        
+class Photo(models.Model):
+    """
+    
+    
+    Поля:
+    
+    """
+    
+       
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+        
+    class Meta:
+        verbose_name = u''
+        verbose_name_plural = u''
+
 
 
 class PhotoNewApartment(PhotoMeta):
@@ -147,7 +185,6 @@ class PhotoNewApartment(PhotoMeta):
         verbose_name_plural = u'Фото квартир новостроек'
 
         
-        
 class ApartmentSecondary(ApartmentObj, SystemMixin, PriceMixin):
     """
     Вторичное жилье, вартиры
@@ -158,7 +195,7 @@ class ApartmentSecondary(ApartmentObj, SystemMixin, PriceMixin):
     terms - условия
     """
 
-    building = models.ForeignKey(BuildingApertment,
+    building = models.ForeignKey(BuildingApartment,
                                  verbose_name=u'Комплекс',
                                  related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
@@ -192,6 +229,25 @@ class PhotoApartmentSecondary(PhotoMeta):
         verbose_name_plural = u'Фото вторичных квартир'
 
 
+class PhotoRoomsSecondary(PhotoMeta):
+    """
+    Фотографии для вторичных комнат
+
+    Поля:
+    rooms_secondary - объект вторичной комнаты
+    """
+
+    rooms_secondary = models.ForeignKey('RoomsSecondary',
+                                        verbose_name=u'Вторичные комнаты',
+                                        related_name='photoroomssecondary_rooms_secondary_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото вторичной комнаты'
+        verbose_name_plural = u'Фото вторичных комнат'
+
 
 class RoomsSecondary(ApartmentObj, SystemMixin, PriceMixin):
     """
@@ -203,7 +259,7 @@ class RoomsSecondary(ApartmentObj, SystemMixin, PriceMixin):
     rooms_numbers - количество комнат на продажу, аренду
     """
 
-    building = models.ForeignKey(BuildingApertment,
+    building = models.ForeignKey(BuildingApartment,
                                  verbose_name=u'Комплекс',
                                  related_name='apartmentsecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
@@ -218,7 +274,3 @@ class RoomsSecondary(ApartmentObj, SystemMixin, PriceMixin):
 
 
 #TODO: - сделать фотографии пропущенные
-
-
-
-

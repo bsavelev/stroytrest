@@ -2,7 +2,7 @@
 from django.db import models
 from new_building.models import Address
 from commercial_estate.models import Communications
-from common.models import PriceMixin, SystemMixin
+from common.models import PriceMixin, SystemMixin, PhotoMeta
 
 
 class VillageAddress(Address):
@@ -84,6 +84,27 @@ class Homestead(HomesteadObj, PriceMixin, SystemMixin):
         verbose_name_plural = u'Загородные участки'
 
 
+class PhotoHomestead(PhotoMeta):
+    """
+    Фото загородных участков
+
+    Поля:
+    homestead - объект загородного участка
+    """
+
+    homestead = models.ForeignKey('Homestead',
+                                  verbose_name=u'Загородный участок',
+                                  related_name='photohomestead_homestead_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото загородного участка'
+        verbose_name_plural = u'Фото загородного участка'
+
+
+
 class HousesWithPlots(models.Model, PriceMixin, SystemMixin):
     """
     Дома с участками
@@ -106,3 +127,24 @@ class HousesWithPlots(models.Model, PriceMixin, SystemMixin):
     class Meta:
         verbose_name = u'Дом с участком'
         verbose_name_plural = u'Дома с участками'
+
+
+class PhotoHouseWithPlots(PhotoMeta):
+    """
+    Фото домов с участками
+
+    Поля:
+    house_with_plots - объект домов с участками
+    """
+
+    house_with_plots = models.ForeignKey('HousesWithPlots',
+                                         verbose_name=u'Дом с участком',
+                                         related_name='photohousewithplots_house_with_plots_related')
+
+    def __unicode__(self):
+        return u'%s' % (self.id,)
+
+    class Meta:
+        verbose_name = u'Фото дома с участком'
+        verbose_name_plural = u'Фото довом с участками'
+

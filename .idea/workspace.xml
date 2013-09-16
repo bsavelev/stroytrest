@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/village/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/village/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/village/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aboard_estate/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_values/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aboard_estate/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_values/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aboard_estate/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_values/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apartment/models.py" afterPath="$PROJECT_DIR$/apartment/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commercial_estate/models.py" afterPath="$PROJECT_DIR$/commercial_estate/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/models.py" afterPath="$PROJECT_DIR$/common/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_building/models.py" afterPath="$PROJECT_DIR$/new_building/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/village/models.py" afterPath="$PROJECT_DIR$/village/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379250933691" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379255850574" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238542056" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
     <file path="/start_script.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299852120" ignored="false" />
-    <file path="/models.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379255812360" ignored="false" />
+    <file path="/models.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379332817726" ignored="false" />
     <file path="$PROJECT_DIR$/compleks/common/__init__.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378572669950" ignored="false" />
     <file path="/urls.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238566668" ignored="false" />
     <file path="/views.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378803995018" ignored="false" />
@@ -43,43 +48,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new_building/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="353" column="9" selection-start="9876" selection-end="9876" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/village/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="14" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apartment/models.py">
+        <entry file="file://$PROJECT_DIR$/static_values/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="40" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.4338843">
+            <state line="16" column="9" selection-start="374" selection-end="374" vertical-scroll-proportion="0.3305785">
               <folding>
                 <element signature="e#23#51#0" expanded="true" />
               </folding>
@@ -90,7 +62,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="23" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0">
+            <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#47#75#0" expanded="true" />
               </folding>
@@ -124,8 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/list.html" />
-        <option value="$PROJECT_DIR$/templates/card.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/new_building/views.py" />
         <option value="$PROJECT_DIR$/project/dev_settings.py" />
@@ -138,8 +108,10 @@
         <option value="$PROJECT_DIR$/new_building/models.py" />
         <option value="$PROJECT_DIR$/commercial_estate/models.py" />
         <option value="$PROJECT_DIR$/village/models.py" />
-        <option value="$PROJECT_DIR$/common/models.py" />
+        <option value="$PROJECT_DIR$/aboard_estate/models.py" />
         <option value="$PROJECT_DIR$/apartment/models.py" />
+        <option value="$PROJECT_DIR$/common/models.py" />
+        <option value="$PROJECT_DIR$/static_values/models.py" />
       </list>
     </option>
   </component>
@@ -217,6 +189,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static_values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -245,7 +231,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="commercial_estate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="apartment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aboard_estate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -542,7 +556,11 @@
       <created>1379250939396</created>
       <updated>1379250939396</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add some photo objects">
+      <created>1379255855419</created>
+      <updated>1379255855419</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -631,7 +649,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add commercial estate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some photo objects" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,21 +673,12 @@
     <MESSAGE value="settings" />
     <MESSAGE value="add apartment" />
     <MESSAGE value="add commercial estate" />
+    <MESSAGE value="add some photo objects" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1091" column="84" selection-start="45427" selection-end="45427" vertical-scroll-proportion="-681.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1070" column="91" selection-start="44582" selection-end="44582" vertical-scroll-proportion="-213.32" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="193" column="77" selection-start="8286" selection-end="8291" vertical-scroll-proportion="0.85240966" />
@@ -717,36 +726,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="3" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.25619835">
-          <folding>
-            <element signature="e#124#166#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commercial_estate/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1700" selection-end="1700" vertical-scroll-proportion="1.0950413">
-          <folding>
-            <element signature="e#23#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new_building/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="353" column="9" selection-start="9876" selection-end="9876" vertical-scroll-proportion="0.0">
+        <state line="246" column="57" selection-start="6465" selection-end="6465" vertical-scroll-proportion="0.74380165">
           <folding>
-            <element signature="e#23#51#0" expanded="true" />
+            <element signature="e#23#51#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apartment/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="8" selection-start="215" selection-end="215" vertical-scroll-proportion="0.08559201">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/village/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="14" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.0">
+        <state line="148" column="54" selection-start="3947" selection-end="3947" vertical-scroll-proportion="3.0578513">
+          <folding>
+            <element signature="e#23#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aboard_estate/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="39" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.87603307">
           <folding>
             <element signature="e#23#51#0" expanded="true" />
           </folding>
@@ -755,25 +762,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state line="28" column="25" selection-start="897" selection-end="897" vertical-scroll-proportion="0.5371901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="3" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commercial_estate/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="61" selection-start="3017" selection-end="3017" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="23" selection-start="2543" selection-end="2543" vertical-scroll-proportion="0.0">
+        <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#47#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apartment/models.py">
+    <entry file="file://$PROJECT_DIR$/static_values/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="40" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.4338843">
+        <state line="16" column="9" selection-start="374" selection-end="374" vertical-scroll-proportion="0.3305785">
           <folding>
             <element signature="e#23#51#0" expanded="true" />
           </folding>
