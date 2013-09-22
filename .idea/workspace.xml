@@ -7,7 +7,7 @@
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379851578694" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379851695220" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379840416802" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
@@ -19,8 +19,8 @@
     <file path="/local_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238070371" ignored="false" />
     <file path="/prod_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238117291" ignored="false" />
     <file path="/500.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379157378277" ignored="false" />
-    <file path="/forms.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379851354509" ignored="false" />
-    <file path="/form-test.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379850601489" ignored="false" />
+    <file path="/forms.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379852031332" ignored="false" />
+    <file path="/form-test.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379852173810" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <file leaf-file-name="form-test.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/form-test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="174" selection-end="174" vertical-scroll-proportion="0.1923077">
+            <state line="11" column="7" selection-start="204" selection-end="204" vertical-scroll-proportion="0.23504274">
               <folding />
             </state>
           </provider>
@@ -105,7 +105,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forms/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="56" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
+            <state line="7" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -748,7 +748,11 @@
       <created>1379851579882</created>
       <updated>1379851579882</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add test form view">
+      <created>1379851696339</created>
+      <updated>1379851696339</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -965,12 +969,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -983,23 +1001,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/form-test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="174" selection-end="174" vertical-scroll-proportion="0.1923077">
+        <state line="11" column="7" selection-start="204" selection-end="204" vertical-scroll-proportion="0.23504274">
           <folding />
         </state>
       </provider>
