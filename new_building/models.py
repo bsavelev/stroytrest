@@ -1,9 +1,10 @@
 # -*- coding:utf-8 -*-
 from django.db import models
 from common.models import SystemMixin, PhotoMeta
+from seo.models import SeoMetaTags
 
 
-class Building(models.Model):
+class Building(SeoMetaTags):
     """
     Родительская модель для сданий, строений
 

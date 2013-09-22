@@ -3,9 +3,10 @@ from django.db import models
 from common.models import SystemMixin, PhotoMeta, PriceMixin
 from apartment.models import NumberOfRooms, Toilet
 from commercial_estate.models import CommunicationsWithInternet
+from seo.models import SeoMetaTags
 
 
-class AboardEstate(models.Model, SystemMixin, PriceMixin):
+class AboardEstate(SeoMetaTags, SystemMixin, PriceMixin):
     """
     Зарубежная недвижимость
 

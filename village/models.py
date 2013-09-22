@@ -3,6 +3,7 @@ from django.db import models
 from new_building.models import Address
 from commercial_estate.models import Communications
 from common.models import PriceMixin, SystemMixin, PhotoMeta
+from seo.models import SeoMetaTags
 
 
 class VillageAddress(Address):
@@ -23,9 +24,9 @@ class VillageAddress(Address):
         verbose_name_plural = u'Адреса для загорода'
 
 
-class HomesteadObj(models.Model):
+class HomesteadObj(SeoMetaTags):
     """
-    Объект - Загородны участок
+    Родительская модель - Объект - Загородны участок
 
     Поля:
     address - адрес участка
@@ -105,7 +106,7 @@ class PhotoHomestead(PhotoMeta):
 
 
 
-class HousesWithPlots(models.Model, PriceMixin, SystemMixin):
+class HousesWithPlots(SeoMetaTags, PriceMixin, SystemMixin):
     """
     Дома с участками
 

@@ -3,6 +3,7 @@ from django.db import models
 from new_building.models import NewBuilding, Building
 from common.models import SystemMixin, PriceMixin, PhotoMeta
 from new_building.models import Terms
+from seo.models import SeoMetaTags
 
 
 class BuildingApartment(Building, SystemMixin):
@@ -42,9 +43,9 @@ class PhotoBuildingApartment(PhotoMeta):
 
 
 
-class ApartmentObj(models.Model):
+class ApartmentObj(SeoMetaTags):
     """
-    Объект квартир
+    Родительская модель - Объект квартир
 
     Поля:
     number_of_rooms - количество комнат
