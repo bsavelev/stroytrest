@@ -27,7 +27,7 @@ class NewBuildingForm(forms.Form):
     area_to = forms.DecimalField()
     kitchen_area_from = forms.DecimalField()
     kitchen_area_to = forms.DecimalField()
-    district = forms.TypedChoiceField(choices=(('1', 'Район номер 1'), ('2','Район номер 2')),
+    district = forms.TypedChoiceField(choices=(('', 'Район выбрать'),('1', 'Район номер 1'), ('2','Район номер 2')),
                                               coerce=int,
                                               empty_value=u'Район')
     search_type = forms.TypedChoiceField(choices=(('1','Квартиры'), ('2','Комплексы')),

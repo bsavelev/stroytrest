@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/forms.py" afterPath="$PROJECT_DIR$/forms/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379850821827" ignored="false" />
+    <file path="/Dummy.txt" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379850988883" ignored="false" />
     <file path="/settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379840416802" ignored="false" />
     <file path="/a.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299843142" ignored="false" />
     <file path="/a.coffee" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1378299845409" ignored="false" />
@@ -18,7 +19,7 @@
     <file path="/local_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238070371" ignored="false" />
     <file path="/prod_settings.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379238117291" ignored="false" />
     <file path="/500.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379157378277" ignored="false" />
-    <file path="/forms.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379849795162" ignored="false" />
+    <file path="/forms.py" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379851354509" ignored="false" />
     <file path="/form-test.html" changelist="2ed9ee21-e3dc-4d53-92c9-fa774ff7a989" time="1379850601489" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="0.5785124">
+            <state line="28" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -101,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forms/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="66" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0">
+            <state line="29" column="66" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.59917355">
               <folding />
             </state>
           </provider>
@@ -159,10 +160,10 @@
         <option value="$PROJECT_DIR$/project/settings.py" />
         <option value="$PROJECT_DIR$/apartment/models.py" />
         <option value="$PROJECT_DIR$/slider/models.py" />
-        <option value="$PROJECT_DIR$/forms/forms.py" />
         <option value="$PROJECT_DIR$/views/views.py" />
         <option value="$PROJECT_DIR$/templates/form-test.html" />
         <option value="$PROJECT_DIR$/project/urls.py" />
+        <option value="$PROJECT_DIR$/forms/forms.py" />
       </list>
     </option>
   </component>
@@ -731,7 +732,11 @@
       <created>1379850825793</created>
       <updated>1379850825793</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add test form view">
+      <created>1379850991023</created>
+      <updated>1379850991023</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -930,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forms/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="66" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../env/lib/python2.7/site-packages/django/views/generic/edit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="4" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
@@ -955,10 +953,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models.py">
+    <entry file="file://$PROJECT_DIR$/project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="28" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -978,12 +978,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/urls.py">
+    <entry file="file://$PROJECT_DIR$/common/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="957" selection-end="957" vertical-scroll-proportion="0.5785124">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state line="95" column="59" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="66" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.59917355">
+          <folding />
         </state>
       </provider>
     </entry>
