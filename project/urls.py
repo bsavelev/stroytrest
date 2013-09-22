@@ -7,6 +7,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 from new_building import views as new_building_views
+from views.views import TestFormView
 
 urlpatterns = patterns('',
     # Examples:
@@ -22,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^$', new_building_views.TestMainView.as_view()),
     url(r'^list/$', new_building_views.TestListView.as_view()),
     url(r'^card/$', new_building_views.TestCardView.as_view()),
+    url(r'^test-form/$', TestFormView.as_view()),
 )
 
 

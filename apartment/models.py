@@ -42,7 +42,6 @@ class PhotoBuildingApartment(PhotoMeta):
         verbose_name_plural = u'Фото комплекса вторичных квартир'
 
 
-
 class ApartmentObj(SeoMetaTags):
     """
     Родительская модель - Объект квартир
@@ -147,25 +146,6 @@ class NewApartment(ApartmentObj, SystemMixin, PriceMixin):
         verbose_name_plural = u'Квартиры в вновостройках'
         
         
-class Photo(models.Model):
-    """
-    
-    
-    Поля:
-    
-    """
-    
-       
-
-    def __unicode__(self):
-        return u'%s' % (self.id,)
-        
-    class Meta:
-        verbose_name = u''
-        verbose_name_plural = u''
-
-
-
 class PhotoNewApartment(PhotoMeta):
     """
     Фото для квартир новстроект
@@ -262,7 +242,7 @@ class RoomsSecondary(ApartmentObj, SystemMixin, PriceMixin):
 
     building = models.ForeignKey(BuildingApartment,
                                  verbose_name=u'Комплекс',
-                                 related_name='apartmentsecondary_building_related')
+                                 related_name='roomssecondary_building_related')
     sale = models.BooleanField(u'Продажа? или аренда', default=True)
     rooms_numbers = models.PositiveSmallIntegerField(u'Количество комнат на продажу/аренду')
 

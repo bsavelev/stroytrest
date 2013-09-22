@@ -132,6 +132,16 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'new_building',
+    'aboard_estate',
+    'apartment',
+    'commercial_estate',
+    'common',
+    'news',
+    'page_flat',
+    'seo',
+    'slider',
+    'static_values',
+    'village',
 )
 
 if THISISLOCALDEV:
