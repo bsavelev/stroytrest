@@ -46,11 +46,22 @@ class TestFormView(TemplateView, ContextMixin):
         """
         Handles GET requests and instantiates a blank version of the form.
         """
-        form_class = self.get_form1_class()
-        form = self.get_form(form_class)
-        return self.render_to_response(self.get_context_data(form=form))
+        form_class1 = self.get_form1_class()
+        form1 = self.get_form(form_class1)
+        form_class2 = self.get_form2_class()
+        form2 = self.get_form(form_class2)
+        return self.render_to_response(self.get_context_data(form1=form1, form2=form2))
 
     def get_form1_class(self):
+        """
+        получение класса первой формы
+        """
+        from forms.forms import NewBuildingForm
+        form_class = NewBuildingForm
+        return form_class
+
+
+    def get_form2_class(self):
         """
         получение класса первой формы
         """
