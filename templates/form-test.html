@@ -5,12 +5,12 @@
 </head>
 <body>
 <form action="" method="post" name='form_1'>{% csrf_token %}
-{{ form1.as_p }}
+{{ form_1.as_p }}
 <input type="submit" value="Submit" />
 </form>
 
 <form action="" method="post" name='form_2'>{% csrf_token %}
-    {{ form2.as_p }}
+    {{ form_2.as_p }}
     <input type="submit" value="Submit" />
 </form>
 </body>
