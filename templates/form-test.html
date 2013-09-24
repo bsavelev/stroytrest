@@ -4,12 +4,12 @@
     <title></title>
 </head>
 <body>
-<form action="" method="post" name='form_1'>{% csrf_token %}
+<form action="/test-form/?p=form_1" method="post" name='form_1'>{% csrf_token %}
 {{ form_1.as_p }}
 <input type="submit" value="Submit" />
 </form>
 
-<form action="" method="post" name='form_2'>{% csrf_token %}
+<form action="/test-form/?p=form_2" method="post" name='form_2'>{% csrf_token %}
     {{ form_2.as_p }}
     <input type="submit" value="Submit" />
 </form>
