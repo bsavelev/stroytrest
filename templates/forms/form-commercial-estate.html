@@ -1,0 +1,126 @@
+                    <form action="/list/" method="GET">{% csrf_token %}
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row">
+                                                {% for radio in form_4.sale_type %}
+                                                    <label class="col">{{ radio.tag }}{{ radio.choice_label }}</label>
+                                                {% endfor %}
+                                            </p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price4" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;{{ form_4.price_from }}</label><label class="col">до&nbsp;{{ form_4.price_to }}</label></p>
+										</div>
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;{{ form_4.area_from }}</label> <label>до&nbsp;{{ form_4.area_to }}</label>&nbsp;кв.м.</p>
+										</div>
+									</div>
+								</td>
+								<td style="vertical-align:middle;">
+									<div class="gap">
+										<div class="field">
+											{{ form_4.type_of_use }}
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											{{ form_4.city }}
+										</div>
+										<div class="field">
+											{{ form_4.district }}
+										</div>
+										<div class="field">
+											{{ form_4.region }}
+										</div>
+										<div class="field">
+											<div><a href="#metro" data-reveal-id="metroMapPopUp" data-animation="fade" class="metroLink">Выбрать станцию метро</a></div>
+											<div class="metro-select-stantions"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+                        {{ form_4.metro_stantions_list }}
+{#						<select class="metro-stantions-list" name="metro-stantions-list" multiple style="display:none;">#}
+{#							<option value="0">Девяткино</option>#}
+{#							<option value="1">Гражданский проспект</option>#}
+{#							<option value="2">Академическая</option>#}
+{#							<option value="3">Политехническая</option>#}
+{#							<option value="4">Площадь Мужества</option>#}
+{#							<option value="5">Лесная</option>#}
+{#							<option value="6">Выборгская</option>#}
+{#							<option value="7">Площадь Ленина</option>#}
+{#							<option value="8">Чернышевская</option>#}
+{#							<option value="9">Площадь Восстания</option>#}
+{#							<option value="10">Владимирская</option>#}
+{#							<option value="11">Пушкинская</option>#}
+{#							<option value="12">Технологический институт</option>#}
+{#							<option value="13">Балтийская</option>#}
+{#							<option value="14">Нарвская</option>#}
+{#							<option value="15">Кировский завод</option>#}
+{#							<option value="16">Автово</option>#}
+{#							<option value="17">Ленинский проспект</option>#}
+{#							<option value="18">Проспект Ветеранов</option>#}
+{#							<option value="19">Парнас</option>#}
+{#							<option value="20">Проспект Просвещения</option>#}
+{#							<option value="21">Озерки</option>#}
+{#							<option value="22">Удельная</option>#}
+{#							<option value="23">Пионерская</option>#}
+{#							<option value="24">Чёрная речка</option>#}
+{#							<option value="26">Горьковская</option>#}
+{#							<option value="27">Невский проспект</option>#}
+{#							<option value="28">Сенная площадь</option>#}
+{#							<option value="29">Фрунзенская</option>#}
+{#							<option value="30">Московские ворота</option>#}
+{#							<option value="31">Электросила</option>#}
+{#							<option value="32">Парк Победы</option>#}
+{#							<option value="33">Московская</option>#}
+{#							<option value="34">Звёздная</option>#}
+{#							<option value="35">Купчино</option>#}
+{#							<option value="36">Приморская</option>#}
+{#							<option value="37">Василеостровская</option>#}
+{#							<option value="38">Гостиный двор</option>#}
+{#							<option value="39">Маяковская</option>#}
+{#							<option value="40">Площадь Александра Невского</option>#}
+{#							<option value="41">Елизаровская</option>#}
+{#							<option value="42">Ломоносовская</option>#}
+{#							<option value="43">Пролетарская</option>#}
+{#							<option value="44">Обухово</option>#}
+{#							<option value="45">Рыбацкое</option>#}
+{#							<option value="46">Спасская</option>#}
+{#							<option value="47">Достоевская</option>#}
+{#							<option value="48">Лиговский проспект</option>#}
+{#							<option value="49">Новочеркасская</option>#}
+{#							<option value="50">Ладожская</option>#}
+{#							<option value="51">Проспект Большевиков</option>#}
+{#							<option value="52">Улица Дыбенко</option>#}
+{#							<option value="53">Комендантский проспект</option>#}
+{#							<option value="54">Старая Деревня</option>#}
+{#							<option value="55">Крестовский остров</option>#}
+{#							<option value="56">Чкаловская</option>#}
+{#							<option value="57">Спортивная</option>#}
+{#							<option value="58">Адмиралтейская</option>#}
+{#							<option value="59">Садовая</option>#}
+{#							<option value="60">Звенигородская</option>#}
+{#							<option value="61">Обводной канал</option>#}
+{#							<option value="62">Волковская</option>#}
+{#							<option value="63">Бухарестская</option>#}
+{#							<option value="64">Международная</option>#}
+{#							<option value="65">Петроградская</option>#}
+{#						</select>#}
+                    <input type="hidden" name="form_name" value="form_4">
+					</form>

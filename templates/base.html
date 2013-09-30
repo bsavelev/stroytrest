@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+        {% block title %}
+        78 регион
+        {% endblock %}
+    </title>
+	{% include 'common/style-scripts.html' %}
+    {% block scripts %}{% endblock %}
+</head>
+<body>
+
+	<div class="page">
+		{% include 'common/top-header.html' %}
+		<div class="wrap slider">
+			{% include 'common/slider-menu.html' %}
+            {% block slider %}
+                {% include 'common/slider.html' %}
+            {% endblock %}
+		</div>
+		{% include 'forms/form-filter.html' %}
+        {% block page_content %}{% endblock %}
+		{% include 'common/footer.html' %}
+	</div>
+{% include 'common/metro-popup.html' %}
+</body>
+</html>

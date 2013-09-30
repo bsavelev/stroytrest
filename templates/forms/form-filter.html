@@ -1,0 +1,48 @@
+<div class="wrap search-form">
+			<div class="search-form_nav" id="tab_nav">
+				<ul>
+					<li class="active"><a href="#new">Новостройки</a></li>
+					<li><a href="#apartment">Квартиры</a></li>
+					<li><a href="#rooms">Комнаты</a></li>
+					<li><a href="#commercial">Коммерческая</a></li>
+					<li><a href="#house">Дома</a></li>
+					<li><a href="#area">Участки</a></li>
+					<li><a href="#abroad">Зарубежная</a></li>
+				</ul>
+				<div class="search-field">
+					<form>
+						<label>
+							<input type="text" name="search" placeholder="Введите текст для поиска по базе">
+							<input type="submit" value="Найти">
+						</label>
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="search-form_body" id="tab_form">
+				<div class="tab active">
+					{% include 'forms/form-newbuilding.html' %}
+				</div>
+				<div class="tab">
+				    {% include 'forms/form-apartment.html' %}
+				</div>
+				<div class="tab">
+					{% include 'forms/form-rooms.html' %}
+				</div>
+				<div class="tab">
+					{% include 'forms/form-commercial-estate.html' %}
+				</div>
+				<div class="tab">
+                    {% include 'forms/form-houses.html' %}
+				</div>
+				<div class="tab">
+					{% include 'forms/form-homestead.html' %}
+				</div>
+				<div class="tab">
+					{% include 'forms/form-aboard-estate.html' %}
+				</div>
+			</div>
+			<div class="search-form_map-link">
+				<a href="#">Показать на карте</a>
+			</div>
+		</div>

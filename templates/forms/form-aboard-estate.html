@@ -1,0 +1,46 @@
+                    <form action="/list/" method="get">{% csrf_token %}
+						<table class="tb">
+							<tr>
+								<td colspan="2" style="width:50%;text-align:center;">
+									<div class="gap">
+										<div class="field">
+{#											<p>#}
+{#                                                <label>#}
+{#                                                    <input type="radio" name="sale_type">Продажа#}
+{#                                                </label>&nbsp;#}
+{#                                                <label>#}
+{#                                                    <input type="radio" name="sale_type">Аренда#}
+{#                                                </label>#}
+{#                                            </p>#}
+                                            <p>
+                                                {% for radio in form_7.sale_type %}
+                                                    <label>{{ radio.tag }}{{ radio.choice_label }}</label>&nbsp;
+                                                {% endfor %}
+                                            </p>
+										</div>
+										<div class="field" style="max-width:200px;margin: 0 auto;">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price7" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;{{ form_7.price_from }}</label><label class="col">до&nbsp;{{ form_7.price_to }}</label></p>
+										</div>
+									</div>
+								</td>
+								<td style="vertical-align: middle;">
+									<div class="gap">
+										<div class="field">
+											{{ form_7.country }}
+										</div>
+									</div>
+								</td>
+
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+                    <input type="hidden" name="form_name" value="form_7">
+					</form>

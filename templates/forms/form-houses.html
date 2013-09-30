@@ -1,0 +1,62 @@
+                    <form action="/list/" method="GET">{% csrf_token %}
+						<table class="tb">
+							<tr>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p class="row">
+                                                {% for radio in form_5.sale_type %}
+                                                    <label class="col">{{ radio.tag }}{{ radio.choice_label }}</label>
+                                                {% endfor %}
+                                            </p>
+										</div>
+										<div class="field">
+											<p>Цена</p>
+											<div class="pwmf"><div id="slider_range_price5" class="slider-range"></div></div>
+											<p class="row"><label class="col">от&nbsp;{{ form_5.price_from }}</label><label class="col">до&nbsp;{{ form_5.price_to }}</label></p>
+										</div>
+										<div class="field">
+											<p>От СПБ</p>
+											<p><label>от&nbsp;{{ form_5.to_city_from }}</label> <label>до&nbsp;{{ form_5.to_city_to }}&nbsp;км</label></p>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<p>Общая площадь:</p>
+											<p><label>от&nbsp;{{ form_5.area_from }}</label> <label>до&nbsp;{{ form_5.area_to }}</label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											<p>Участок:</p>
+											<p><label>от&nbsp;{{ form_5.homestead_area_from }}</label> <label>до&nbsp;{{ form_5.homestead_area_to }}</label>&nbsp;кв.м.</p>
+										</div>
+										<div class="field">
+											{{ form_5.use_to }}
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											{{ form_5.city }}
+										</div>
+										<div class="field">
+											{{ form_5.district }}
+										</div>
+										<div class="field">
+											{{ form_5.region }}
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="gap">
+										<div class="field">
+											<input type="submit" value="Найти" class="bg-link">
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+                    <input type="hidden" name="form_name" value="form_5">
+					</form>

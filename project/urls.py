@@ -7,7 +7,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 from new_building import views as new_building_views
-from views.views import TestFormView
+from views.views import MainView, ListFormView
 
 urlpatterns = patterns('',
     # Examples:
@@ -20,10 +20,11 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^$', new_building_views.TestMainView.as_view()),
-    url(r'^list/$', new_building_views.TestListView.as_view()),
+    url(r'^$', MainView.as_view()),
+    url(r'^list/$', ListFormView.as_view()),
+
+
     url(r'^card/$', new_building_views.TestCardView.as_view()),
-    url(r'^test-form/$', TestFormView.as_view()),
 )
 
 

@@ -1,0 +1,52 @@
+                                    <form action="/list/" method="GET">{% csrf_token %}
+										<table class="tb">
+											<tr>
+												<td colspan="2">
+													<p><b>Цена <i>(т.руб.)</i></b></p>
+													<div id="slider_range_price" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;{{ form_8.price_from }}</label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;{{ form_8.price_to }}</label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p><b>Площадь квартиры <i>(кв.м.)</i></b></p>
+													<div id="slider_range_area" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;{{ form_8.area_from }}</label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;{{ form_8.area_to }}</label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<p><b>Срок сдачи <i>(гг.)</i></b></p>
+													<div id="slider_range_years" class="slider-range"></div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p><label>от&nbsp;{{ form_8.years_from }}</label></p>
+												</td>
+												<td>
+													<p><label>до&nbsp;{{ form_8.years_to }}</label></p>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2">
+													<input type="submit" value="Найти" class="bg-link" />
+												</td>
+											</tr>
+										</table>
+                                        <input type="hidden" name="form_name" value="form_8">
+									</form>

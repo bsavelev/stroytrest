@@ -3,14 +3,25 @@ __author__ = 'michael'
 from django.views.generic import TemplateView
 from static_values.models import StaticValues
 from slider.models import Slider
-from forms.forms import NewBuildingForm1, NewBuildingForm2
+from forms.forms import NewBuildingForm, ApartmentForm, RoomsForm, CommercialEstateForm, HousesForm, HomesteadForm, \
+    AboardEstateForm, FastSearchForm
 from common.views import Forms2Mixin
 
 
-class MainView(TemplateView):
+class MainView(Forms2Mixin, TemplateView):
     """
     Главная страница
     """
+    template_name = 'index.html'
+    success_url = '/'
+    form_class_1 = NewBuildingForm
+    form_class_2 = ApartmentForm
+    form_class_3 = RoomsForm
+    form_class_4 = CommercialEstateForm
+    form_class_5 = HousesForm
+    form_class_6 = HomesteadForm
+    form_class_7 = AboardEstateForm
+    form_class_8 = FastSearchForm
 
     def get_static_values(self):
         """
@@ -36,20 +47,18 @@ class MainView(TemplateView):
         return query
 
 
-
-class TestFormView(Forms2Mixin, TemplateView):
-    """
-    Для тестирования форм
+class ListFormView(Forms2Mixin, TemplateView):
     """
 
-    template_name = 'form-test.html'
-    success_url = '/test-form/'
-    form_class_1 = NewBuildingForm1
-    form_class_2 = NewBuildingForm1
-    form_class_3 = NewBuildingForm1
-    form_class_4 = NewBuildingForm1
-    form_class_5 = NewBuildingForm1
-    form_class_6 = NewBuildingForm1
-    form_class_7 = NewBuildingForm1
-    form_class_8 = NewBuildingForm1
+    """
 
+    template_name = 'list.html'
+    success_url = '/'
+    form_class_1 = NewBuildingForm
+    form_class_2 = ApartmentForm
+    form_class_3 = RoomsForm
+    form_class_4 = CommercialEstateForm
+    form_class_5 = HousesForm
+    form_class_6 = HomesteadForm
+    form_class_7 = AboardEstateForm
+    form_class_8 = FastSearchForm
