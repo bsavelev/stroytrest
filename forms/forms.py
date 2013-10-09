@@ -2,6 +2,12 @@
 __author__ = 'michael'
 from django import forms
 
+SEARCH_TYPE_CHOISE = (
+    ('1', 'комплексам' ),
+    ('2', 'квартирам'),
+)
+
+#TODO: Проверка каждого поля что такой объект в модели существует!!!
 
 class NewBuildingForm(forms.Form):
     """
@@ -38,7 +44,7 @@ class NewBuildingForm(forms.Form):
                                                   widget=forms.SelectMultiple(attrs={'class':'metro-stantions-list',
                                                                                      'style':'display:none;'}))
     search_type = forms.TypedChoiceField(widget=forms.RadioSelect(),
-                                         choices=(('1', 'комплексам'), ('2', 'квартирам')),
+                                         choices=SEARCH_TYPE_CHOISE,
                                          coerce=int,
                                          required=False)
 
