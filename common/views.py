@@ -200,16 +200,6 @@ class Forms2Mixin(ContextMixin):
         self.get_form_processing(form)
         return self.render_all_forms(form=form, **kwargs)
 
-    def get_form_processing(self, form):
-        """
-
-        """
-        if self.required_form_prefix is None:
-            self.get_raise_404()
-        method_name = u'get_%s_query' % (self.required_form_prefix,)
-        form_query = getattr(self, method_name, self.get_raise_404())
-        return form_query(form)
-
     def get_form_1_query(self, form):
         """
 
@@ -236,7 +226,7 @@ class Forms2Mixin(ContextMixin):
         elif search_type == 2:
             self.new_apartment = self.get_query_apartment(form)
         else:
-            self.get_raise_404()
+            self.new_apartment = self.get_query_apartment(form)
 
     def get_query_apartment(self, form):
         """
@@ -365,3 +355,13 @@ class Forms2Mixin(ContextMixin):
     # object, note that browsers only support POST for now.
     def put(self, *args, **kwargs):
         return self.post(*args, **kwargs)
+
+    def get_form_processing(self, form):
+        """
+
+        """
+        if self.required_form_prefix is None:
+            self.get_raise_404()
+        method_name = u'get_%s_query' % (self.required_form_prefix,)
+        form_query = getattr(self, method_name, self.get_raise_404)
+        return form_query(form)

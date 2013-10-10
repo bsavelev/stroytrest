@@ -46,7 +46,8 @@ class NewBuildingForm(forms.Form):
     search_type = forms.TypedChoiceField(widget=forms.RadioSelect(),
                                          choices=SEARCH_TYPE_CHOISE,
                                          coerce=int,
-                                         required=False)
+                                         required=False,
+                                         initial=SEARCH_TYPE_CHOISE[0])
 
 
 class ApartmentForm(forms.Form):

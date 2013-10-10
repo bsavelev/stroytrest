@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Список
+{% endblock %}
+
+{% block slider %}
+
+{% endblock %}
+
+{% block page_content %}
+        <div class="wrap page-content">
+			<div class="two-cols">
+				<div class="col">
+                    {% include 'list/list-inner.html' %}
+				</div>
+				<div class="col">
+					<div class="aside">
+						<div class="aside_block">
+							<div class="body">
+								<div class="youtube">
+									<img src="{{ STATIC_URL }}i/youtube.jpg" alt="Youtube">
+								</div>
+								<p><a href="#">Посмотреть всё видео</a></p>
+							</div>
+						</div>
+						<div class="aside_block aside_block-bd">
+							<div class="title">
+								Специальные предложения
+							</div>
+							<div class="body">
+								<div class="special-offers">
+									<div class="offer object-card">
+										<div class="gap">
+											<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+											<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+										</div>
+									</div>
+									<div class="offer object-card">
+										<div class="gap">
+											<div class="info"><a href="#">Дача, Московскя обл., с. Лиепайское, ул. Победы, д. 16<span class="image"><img src="{{ STATIC_URL }}i/result.jpg" alt=""></span></a></div>
+											<div class="price">150 т.руб.</div>
+								<div class="descr">Деревянный дом на дачном участке, отдаленном от цивилизации</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+{% endblock %}

@@ -52,7 +52,7 @@ class ListFormView(Forms2Mixin, TemplateView):
 
     """
 
-    template_name = 'list.html'
+    template_name = 'list/list.html'
     success_url = '/'
     form_class_1 = NewBuildingForm
     form_class_2 = ApartmentForm
