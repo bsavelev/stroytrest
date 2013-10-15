@@ -7,7 +7,7 @@ PROPERTY_NAME = {
     3: {'name': 'bool', 'function': bool}
 }
 
-PROPERTY_NAME_CHOICES = [(k, v['name'])for k, v in PROPERTY_NAME]
+PROPERTY_NAME_CHOICES = [(k, v['name'])for k, v in PROPERTY_NAME.iteritems()]
 
 
 class State(models.Model):
@@ -15,15 +15,15 @@ class State(models.Model):
     name = models.CharField(max_length=255)
 
 
-class Metro():
+class Metro(models.Model):
     "станция метро"
-    city = models.ForeignKey(State)
+    city = models.ForeignKey('State')
     name = models.CharField(max_length=255)
 
 
 class District(models.Model):
     "район"
-    city = models.ForeignKey(State)
+    city = models.ForeignKey('State')
     name = models.CharField(max_length=255)
 
 
@@ -38,7 +38,7 @@ class Developer(models.Model):
 class DeveloperProject(models.Model):
     "проект застройщика"
     name = models.CharField(max_length=255)
-    developer = models.ForeignKey(Developer)
+    developer = models.ForeignKey('Developer')
 
 
 class RealtyType(models.Model):
@@ -58,23 +58,23 @@ class PropertyName(models.Model):
 
 
 class Property(models.Model):
-    name = models.ForeignKey(PropertyName)
+    name = models.ForeignKey('PropertyName')
     value = models.TextField()
 
 
 class Realty(models.Model):
     "объект недвижимости"
-    rtype = models.ForeignKey(RealtyType)
-    district = models.ForeignKey(District)
-    rstatus = models.ForeignKey(RealtyStatus)
-    metro = models.ForeignKey(Metro, blank=True, null=True)
-    project = models.ForeignKey(DeveloperProject, blank=True, null=True)
+    rtype = models.ForeignKey('RealtyType')
+    district = models.ForeignKey('District')
+    rstatus = models.ForeignKey('RealtyStatus')
+    metro = models.ForeignKey('Metro', blank=True, null=True)
+    project = models.ForeignKey('DeveloperProject', blank=True, null=True)
     address = models.TextField()
     flour = models.IntegerField(blank=True, null=True)
     price = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=2)
-    rproperty = models.ManyToManyField(Property)
+    rproperty = models.ManyToManyField('Property')
 
 
 class Photo(models.Model):
-    realty = models.ForeignKey(Realty)
-    image = models.ImageField()
+    realty = models.ForeignKey('Realty')
+    image = models.ImageField(upload_to='photo')
