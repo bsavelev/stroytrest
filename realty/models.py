@@ -30,6 +30,9 @@ class District(models.Model):
 class Developer(models.Model):
     "застройщик"
     name = models.CharField(max_length=255)
+    address = models.TextField()
+    phone = models.CharField(max_length=255)
+    email = models.EmailField()
 
 
 class DeveloperProject(models.Model):
@@ -65,7 +68,7 @@ class Realty(models.Model):
     district = models.ForeignKey(District)
     rstatus = models.ForeignKey(RealtyStatus)
     metro = models.ForeignKey(Metro, blank=True, null=True)
-    developer = models.ForeignKey(Developer, blank=True, null=True)
+    project = models.ForeignKey(DeveloperProject, blank=True, null=True)
     address = models.TextField()
     flour = models.IntegerField(blank=True, null=True)
     price = models.DecimalField(blank=True, null=True, max_digits=9, decimal_places=2)
