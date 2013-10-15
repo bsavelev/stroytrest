@@ -3,7 +3,8 @@ from django.db import models
 
 PROPERTY_NAME = {
     1: {'name': 'integer', 'function': int},
-    2: {'name': 'text', 'function': str}
+    2: {'name': 'text', 'function': str},
+    3: {'name': 'bool', 'function': bool}
 }
 
 PROPERTY_NAME_CHOICES = [(k, v['name'])for k, v in PROPERTY_NAME]
